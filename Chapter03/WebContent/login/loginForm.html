@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<style>
+	*{box-sizing: border-box;}
+	body{margin: 0 auto;}
+	ul li{
+		list-style: none;
+	}
+	label{
+		float: left;
+		width: 75px;
+		margin-right: 10px;
+	}
+	li{
+		margin-bottom: 10px;
+	}
+	input{
+		border : 1px solide #ccc;
+		border-radius: 2px;
+	}
+	button[type="submit"] {
+		margin-left:40px;
+		margin-right:20px;
+	}
+</style>
+</head>
+<body>
+	<form action="loginProcess2.jsp" method="post">
+		<ul>
+			<li>
+				<label for="userid">아이디</label>
+				<input type="text" id="userid" name="userid">
+			</li>
+			<li>
+				<label for="psw">비밀번호</label>
+				<input type="password" id="psw" name="psw">
+			</li>
+		</ul>
+		<button type="submit">로그인</button>
+		<button type="reset">초기화</button>
+	</form>
+</body>
+</html>
