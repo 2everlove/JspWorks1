@@ -20,7 +20,7 @@
 		if(login.checkUser())
 			out.println("<h3>로그인 성공</h3><p>아이디 : "+login.getUserid()+"<br>비밀번호 : "+login.getPsw());
 		else
-			out.println("<h3>로그인 실패</h3>");
+			out.println("<h3>로그인 실패</h3><br><a href='loginForm.html'>이전화면 돌아가기</a>");
 	%>
 <%-- 	<p>아이디 : <%=login.getUserid() %>
 	<p>비밀번호 : <%=login.getPsw() %> --%>

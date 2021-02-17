@@ -8,8 +8,8 @@ public class LoginBean implements Serializable {
 	private String userid;
 	private String psw;
 	
-	final String uid = "myuser";
-	final String pwd = "12345";
+	final String uid = "admin";
+	final String pwd = "0000";
 	
 	public String getUserid() {
 		return userid;
