@@ -9,26 +9,30 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+<%-- <jsp:useBean id="calculate" class="com.bean.Calculator" scope="request" /> --%>
+<jsp:useBean id="calc" class="com.bean.Calculator" />
+<jsp:setProperty property="num1" name="calc"/>
+<jsp:setProperty property="num2" name="calc"/>
+<jsp:setProperty property="op" name="calc"/>
+	
 	<div id="container">
 		<h3>계산기</h3>
 		<hr>
-	</div>
- 	<%-- <jsp:useBean id="calculate" class="com.bean.Calculator" scope="request" />
-	<jsp:setProperty property="num1" name="calculate"/>
-	<jsp:setProperty property="num2" name="calculate"/>
-	<jsp:setProperty property="op" name="calculate"/>
 	
 	<%
-		calculate.calculate();
+		calc.calculate();
 	%>
-	<p>계산 결과 : <jsp:getProperty property="result" name="calculate"/><br>
+	<p>계산 결과 : <jsp:getProperty property="result" name="calc"/><br>
 	<hr>
-	<a href="calc.jsp">돌아가기</a></p> --%>
+	<a href="calc.jsp">돌아가기</a></p>
+	</div>
 	
-	<% 
+	<%-- <% 
 		Calculator calc = new Calculator();
 		int num1;
 		int num2;
+		int result;
 		String op;
 		
 		if(request.getParameter("num1")==""){
@@ -54,6 +58,6 @@
 	
 	<p>계산 결과 : <%=calc.getResult() %><br>
 	<hr>
-	<a href="calc.jsp">돌아가기</a></p>
+	<a href="calc.jsp">돌아가기</a></p> --%>
 </body>
 </html>

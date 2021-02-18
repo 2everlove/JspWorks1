@@ -20,7 +20,10 @@ public class Calculator implements Serializable {
 		else if(op.equals("x"))
 			result = num1*num2;
 		else if(op.equals("/"))
-			result = num1/num2;
+			if(num1==0||num2==0)
+				result = 0;
+			else
+				result = num1/num2;
 		return result;
 	}
 
