@@ -16,6 +16,7 @@
 	<% 
 		gugu.setDan(6);
 	 	gugu.gugudan();
+	 	gugu.showResult();
 	%>
 	<p> <%=gugu.getResult() %>
 <%-- 	<jsp:getProperty property="result" name="gugu"/> --%>

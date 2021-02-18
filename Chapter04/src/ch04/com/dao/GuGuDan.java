@@ -18,8 +18,9 @@ public class GuGuDan {
 	}
 	public void showResult() {
 		for(String s : result) {
-			s;
+			System.out.println(s.replaceAll("<br>", ""));
 		}
+
 	}
 
 
