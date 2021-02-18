@@ -9,8 +9,10 @@
 </head>
 <body>
 	<jsp:useBean id="login" class="com.bean.LoginBean" scope="request" />
-	<jsp:setProperty property="userid" name="login"/>
-	<jsp:setProperty property="psw" name="login"/>
+	<!-- 페이지<->페이지는 request, 전체 이동은 application -->
+<%-- 	<jsp:setProperty property="userid" name="login"/>
+	<jsp:setProperty property="userid" name="login"/> --%>
+	<jsp:setProperty property="*" name="login"/><!-- *은 전체 설정 -->
 	
 	<%
 		if(login.checkUser())

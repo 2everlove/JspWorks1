@@ -11,7 +11,7 @@
 	<h2>response 객체</h2>
 	<%
 		response.sendRedirect("http://www.naver.com");
-		response.sendRedirect("request1.jsp");
+		/* response.sendRedirect("request1.jsp"); */
 	%>
 	<!-- 내외부 문서 모두 강제 이동 시킴 -->
 </body>

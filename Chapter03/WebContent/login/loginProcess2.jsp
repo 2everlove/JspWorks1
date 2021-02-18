@@ -11,12 +11,14 @@
 <body>
 	<%
 		LoginBean login = new LoginBean();
-		/* String userid=request.getParameter("userid");
-		String psw=request.getParameter("psw");
+	
+		String userid = request.getParameter("userid");
+		String psw = request.getParameter("psw");
+		
 		login.setUserid(userid);
-		login.setPsw(psw); */
-		login.setUserid(request.getParameter("userid"));
-		login.setPsw(request.getParameter("psw"));
+		login.setPsw(psw);
+		/* login.setUserid(request.getParameter("userid"));
+		login.setPsw(request.getParameter("psw")); */
 		if(login.checkUser())
 			out.println("<h3>로그인 성공</h3><p>아이디 : "+login.getUserid()+"<br>비밀번호 : "+login.getPsw());
 		else
