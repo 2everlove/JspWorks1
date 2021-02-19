@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주소 등록 폼</title>
+<link rel="stylesheet" href=css/address.css>
+</head>
+<body>
+	<div id="container">
+		<h2>주소 등록</h2>
+		<hr>
+		<form action="addrAdd.jsp" method="post">
+			<table>
+				<tr>
+					<th>이름</th>
+					<td><input type="text" name="username" maxlength=20 size=20></td>
+				</tr>
+				<tr>
+					<th>연락처</th>
+					<td><input type="tel" name="tel" maxlength=20 size=20></td>
+				</tr>
+				<tr>
+					<th>이메일</th>
+					<td><input type="email" name="email" maxlength=30 size=20></td>
+				</tr>
+				<tr>
+					<th>성별</th>
+					<td>
+						<select name="gender">
+							<option selected="selected">남</option>
+							<option>여</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="확인">
+						<input type="reset" value="취소">
+					</td>
+				</tr>
+				
+			
+			</table>
+		</form>
+	</div>
+</body>
+</html>

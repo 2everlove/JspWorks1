@@ -9,16 +9,26 @@
 </head>
 <body>
 	<h3>구구단 출력하기</h3>
+	<%	
+		int dan = 4;
+		/* for(int i=0; i<10; i++){
+			out.println(dan+"*"+i+"="+dan*i+"<br>");
+		} */
+	%>
 	<jsp:useBean id="gugu" class="ch04.com.dao.GuGuDan"></jsp:useBean>
-	<jsp:setProperty property="dan" name="gugu"/>
 	<jsp:setProperty property="result" name="gugu"/>
 	
 	<% 
-		gugu.setDan(6);
-	 	gugu.gugudan();
-	 	gugu.showResult();
+	
+		int d = Integer.parseInt(request.getParameter("dan"));
+	 	
+		for(String s: gugu.gugudan(d)){
+			out.println(s);
+		}
+		
+	 	/* gugu.showResult(); */
 	%>
-	<p> <%=gugu.getResult() %>
-<%-- 	<jsp:getProperty property="result" name="gugu"/> --%>
+	<%-- <p> <%=gugu.getResult() %> --%>
+ 	<%-- <jsp:getProperty property="result" name="gugu"/> --%> 
 </body>
 </html>

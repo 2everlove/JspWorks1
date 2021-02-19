@@ -1,0 +1,31 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+#container{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+hr{
+	margin-bottom: 20px;
+}
+table{
+	margin: 0 auto;
+	width: 300px;
+}
+table, td, th{
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	height:30px;
+}
+/* th, td{
+	padding: 10px 5px;
+} */
+#table__2{
+	margin: 0 auto;
+	width: 500px;
+}
+.wi{
+	width: 180px;
+}
