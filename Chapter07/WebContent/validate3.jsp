@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div id="container">
-		<form name ="loginForm" action="validate2userid_process.jsp" method="post">
+		<form name ="loginForm" action="validate2_process.jsp" method="post">
 			<p>
 				<label for="id">아이디</label>
 				<input type="text" name="userid" autofocus="autofocus">
@@ -26,6 +26,5 @@
 			</p>
 		</form>
 	</div>
-
 </body>
 </html>
