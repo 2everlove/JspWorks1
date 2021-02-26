@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class DBSelect {
+	//WebContent/WEB-INF/ojdbc8.jar 필요 --> 위치 - C:\serverConfig\DBMS\sqldeveloper\jdbc\lib\ojdbc8.jar
 	private static String driverClass = "oracle.jdbc.OracleDriver";		// oracle 주소
 	private static String url = "jdbc:oracle:thin:@localhost:1521:xe"; // db 주소 thin(drive type) xe버전
 	private static String username = "HR"; //사용자 (DB)
@@ -15,7 +16,6 @@ public class DBSelect {
 	private static PreparedStatement pstmt = null;
 	private static ResultSet rs = null;
 	
-			
 	public static void main(String[] args) {
 		try {
 			Class.forName(driverClass); //driver loading
@@ -26,11 +26,10 @@ public class DBSelect {
 			String sql = "SELECT * FROM t_student";
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery(); //db의 반환값을 가져욤
-			int i=0;
+			int i=1;
 			while(rs.next()) { //자료가 있으면 출력
-				System.out.println(i+"번 인덱스");
-				System.out.print("학번 : "+rs.getInt("studentid"));
-				System.out.println(", 이름 : "+rs.getString("name"));
+				System.out.print(i+"번 | "+"학번 : "+rs.getInt("studentid"));
+				System.out.println(" | 이름 : "+rs.getString("name"));
 				i++;
 			}
 			
