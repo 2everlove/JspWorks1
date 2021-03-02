@@ -3,6 +3,7 @@ package com.dao;
 import java.util.ArrayList;
 
 public class AddrBookDAO{
+	
 	private ArrayList<AddrBook> addrList= new ArrayList<>();
 	
 	//주소 추가

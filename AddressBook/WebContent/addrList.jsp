@@ -29,8 +29,10 @@
 			<tr>
 				<td><%=addrBook.getUsername() %> </td>
 				<td><%=addrBook.getGender() %> </td>
+									<!-- ? 쿼리스트링 -->
 				<td><a href="addrView.jsp?username=<%=addrBook.getUsername() %>"><input type="button" value="보기"></a></td>
-				<td><a onclick="return confirm('정말로 삭제하시겠습니까?')" href="addrDelete.jsp?username=<%=addrBook.getUsername()%>"><input type="button" value="삭제"></a></td>
+				<td><a onclick="return confirm('정말로 삭제하시겠습니까?')" 
+						href="addrDelete.jsp?username=<%=addrBook.getUsername()%>"><input type="button" value="삭제"></a></td>
 			</tr>
 			<%
 				}
