@@ -14,7 +14,7 @@ public class DBConnection {
 	private static PreparedStatement pstmt = null;
 			
 	public static void main(String[] args) {
-		String sql = "INSERT INTO t_student VALUES (109,'유유')"; //sql 문법
+		String sql = "INSERT INTO t_student VALUES (201,'지구')"; //sql 문법
 		try {
 			Class.forName(driverClass); //driver loading
 			conn = DriverManager.getConnection(url, username, password);
