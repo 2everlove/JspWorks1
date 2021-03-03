@@ -1,4 +1,4 @@
-<%@ page import="com.dao.AddrBook" %>
+<%@ page import="com.beans.AddrBook" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
 <link rel="stylesheet" href=css/address.css>
 </head>
 <body>
-<jsp:useBean id="abDAO" class="com.dao.AddrBookDAO" scope="application"/>
+<jsp:useBean id="abDAO" class="com.bean.AddrBookDAO" scope="application"/>
 	<div id="container">
 		<h2>주소 목록</h2>
 		<hr>

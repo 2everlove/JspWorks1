@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:useBean id="login" class="com.bean.LoginBean" scope="request" />
+	<jsp:useBean id="login" class="com.beans.LoginBean" scope="request" />
 	<!-- 페이지<->페이지는 request, 전체 이동은 application -->
 <%-- 	<jsp:setProperty property="userid" name="login"/>
 	<jsp:setProperty property="userid" name="login"/> --%>

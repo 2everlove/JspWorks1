@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h2></h2>
-	<jsp:useBean id="member" class="com.bean.MemberBean" scope="request" />
+	<jsp:useBean id="member" class="com.beans.MemberBean" scope="request" />
 	<%-- <p><%= "이름 : "+ member.getName()+"<br>사원번호 : "+member.getId() %></p> --%>
 	<p>아이디 : <%=member.getId() %>
 	<p>이 름 : <%=member.getName() %>

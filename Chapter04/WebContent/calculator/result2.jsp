@@ -1,4 +1,4 @@
-<%@ page import="com.bean.Calculator" %>
+<%@ page import="com.beans.Calculator" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -11,7 +11,7 @@
 <body>
 
 <%-- <jsp:useBean id="calculate" class="com.bean.Calculator" scope="request" /> --%>
-<jsp:useBean id="calc" class="com.bean.Calculator" />
+<jsp:useBean id="calc" class="com.beans.Calculator" />
 <jsp:setProperty property="num1" name="calc"/>
 <jsp:setProperty property="num2" name="calc"/>
 <jsp:setProperty property="op" name="calc"/>

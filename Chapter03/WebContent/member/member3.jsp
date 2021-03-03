@@ -8,7 +8,7 @@
 <title>Action Tag</title>
 </head>
 <body>
-	<jsp:useBean id="member" class="com.bean.MemberBean" scope="request" />
+	<jsp:useBean id="member" class="com.beans.MemberBean" scope="request" />
 	<jsp:setProperty property="id" name="member" value="2020200"/>
 	<jsp:setProperty property="name" name="member" value="왜그래"/>
 	

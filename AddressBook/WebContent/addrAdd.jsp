@@ -10,13 +10,13 @@
 <link rel="stylesheet" href=css/address.css>
 </head>
 <body>
-	<jsp:useBean id="addrBook" class="com.dao.AddrBook"/>
+	<jsp:useBean id="addrBook" class="com.bean.AddrBook"/>
 	<jsp:setProperty property="username" name="addrBook"/>
 	<jsp:setProperty property="tel" name="addrBook"/>
 	<jsp:setProperty property="email" name="addrBook"/>
 	<jsp:setProperty property="gender" name="addrBook"/>
 	
-	<jsp:useBean id="abDAO" class="com.dao.AddrBookDAO" scope="application"/>
+	<jsp:useBean id="abDAO" class="com.bean.AddrBookDAO" scope="application"/>
 	<!-- application 다른 페이지에서도 쓸 수 있게 해줌 (static 기능) -->
 	<%
 		abDAO.addAddress(addrBook);
