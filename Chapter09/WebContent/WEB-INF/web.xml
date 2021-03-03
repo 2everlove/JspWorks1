@@ -9,4 +9,39 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+
+	<!--오류 페이지 설정 -->
+	<error-page>
+		<error-code>500</error-code>
+		<location>/errorMessage.jsp</location>
+	</error-page>
+	
+	<!-- 보안 - 기본 인증 처리 -->
+	<security-role>
+		<role-name>role1</role-name>
+	</security-role>
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Security</web-resource-name>
+			<url-pattern>/security01.jsp</url-pattern>
+		</web-resource-collection>
+		<auth-constraint> <!-- 권한이 부여된 사용자 이름 -->
+			<description></description>
+			<role-name>role1</role-name>
+		</auth-constraint>
+	</security-constraint>
+	>
+	<!--<login-config> 
+		<auth-method>BASIC</auth-method>
+	</login-config>-->
+	
+	<!-- FORM 인증 처리 방식 -->
+	<login-config> 
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/login.jsp</form-login-page>
+			<form-error-page>/loginFail.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
 </web-app>
+
