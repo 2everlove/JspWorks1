@@ -97,11 +97,45 @@ public class AddrBookDAO implements Serializable {
 		return addrList;
 	}
 	
-	public AddrBook viewAddr(int num) {
+	//세부 정보
+	public AddrBook getOneDB(int num) {
 		connDB();
-		String sql = "select * from t_address where num = '"+num+"'";
-		return null;
-		
+		AddrBook addrbook = new AddrBook();
+		String sql = "select * from t_address where num = ?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, num); //입력번호 세팅
+			rs = pstmt.executeQuery();
+			rs.next(); //1개의 자료
+			addrbook.setNum(rs.getInt("num"));
+			addrbook.setUsername(rs.getString("username"));
+			addrbook.setTel(rs.getString("tel"));
+			addrbook.setEmail(rs.getString("email"));
+			addrbook.setGender(rs.getString("gender"));
+			addrbook.setJoinDate(rs.getDate("joinDate"));
+			rs.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnect();
+		}
+		return addrbook;
 	}
+	
+	//주소 삭제
+	public void remobeAddress(int num) {
+		connDB();
+		String sql = "delete from t_address where num = ?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, num);
+			pstmt.executeUpdate(); //트랜잭션 수행완료
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnect();
+		}
+	}
+	
 	
 }

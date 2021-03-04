@@ -29,3 +29,17 @@ table, td, th{
 .wi{
 	width: 180px;
 }
+
+.input{
+	text-align: center; 
+	background-color: white; 
+	border: 1px solid #eee;
+	color: black;
+}
+
+.view__button{
+	border: 1px solid #ccc;
+}
+#view__button:hover{
+	border: 1px solid black;
+}
