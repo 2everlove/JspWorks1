@@ -12,7 +12,10 @@
 	<%
 		int num = Integer.parseInt(request.getParameter("num"));
 		abBook.remobeAddress(num);
-		response.sendRedirect("addrList.jsp");
+		out.println("<script>");
+		out.println("alert('삭제가 완료되었습니다.')");
+		out.println("location.href='logOut.jsp'");
+		out.println("</script>");
 	%>
 </body>
 </html>

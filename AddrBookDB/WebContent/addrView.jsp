@@ -15,6 +15,11 @@
 	<%
 		int num = Integer.parseInt(request.getParameter("num"));
 		AddrBook addrBook = abBook.getOneDB(num);
+		
+		String sessionId = null;
+		if(session.getAttribute("sessionId") != null){
+			sessionId=(String)session.getAttribute("sessionId");
+		}
 	%>
 	<div id="container">
 		<h2><%=addrBook.getUsername() %>님의 정보</h2>
@@ -22,19 +27,19 @@
 		<table>
 			<tr>
 				<th>번호</th>
-				<td><input type="text" name="num" class="input" value="<%=addrBook.getNum() %>"></td>
+				<td><input type="text" name="num" class="input" value="<%=addrBook.getNum() %>" disabled="disabled"></td>
 			</tr>
 			<tr>
 				<th>이름</th>
-				<td><input type="text" name="username" class="input" value="<%=addrBook.getUsername() %>"></td>
+				<td><input type="text" name="username" class="input" value="<%=addrBook.getUsername() %>" disabled="disabled"></td>
 			</tr>
 			<tr>
 				<th>연락처</th>
-				<td><input type="text" name="tel" class="input" value="<%=addrBook.getTel() %>"></td>
+				<td><input type="text" name="tel" class="input" value="<%=addrBook.getTel() %>" disabled="disabled"></td>
 			</tr>
 			<tr>
 				<th>이메일</th>
-				<td><input type="text" name="email" class="input" value="<%=addrBook.getEmail() %>"></td>
+				<td><input type="text" name="email" class="input" value="<%=addrBook.getEmail() %>" disabled="disabled"></td>
 			</tr>
 			<tr>
 				<th>성별</th>
@@ -42,25 +47,28 @@
 					<% 
 						if(addrBook.getGender().equals("남")){
 					%>
-						<input type="radio" name="gender" class="input" value="남" checked >남
-						<input type="radio" name="gender" class="input" value="여">여
+						<input type="radio" name="gender" class="input" value="남" checked disabled="disabled">남
+						<input type="radio" name="gender" class="input" value="여" disabled="disabled">여
 					<%
 						} else if (addrBook.getGender().equals("여")) {
 					%>
-						<input type="radio" name="gender" class="input" value="남">남
-						<input type="radio" name="gender" class="input" value="여" checked="checked">여
+						<input type="radio" name="gender" class="input" value="남" disabled="disabled">남
+						<input type="radio" name="gender" class="input" value="여" checked="checked" disabled="disabled">여
 					<% } %>
 					</td>
 			</tr>
 			<tr>
 				<th>가입일</th>
-				<td><input type="text" name="joinDate" class="input" value="<%=addrBook.getJoinDate() %>"></td>
+				<td><input type="text" name="joinDate" class="input" value="<%=addrBook.getJoinDate() %>" disabled="disabled"></td>
 			</tr>
 			<tr>
 				<td colspan="2">
 					<a href="addrList.jsp"><input type="button" class="view__button" value="목록"></a>
-					<a href="addrUpdate.jsp?num=<%=addrBook.getNum()%>"><input type="button" class="view__button" value="수정"></a>
+					<!-- sessionId만 있는 사람만 볼 수 있게 설정 -->
+					<% if(sessionId.equals(addrBook.getEmail())){ %>
+					<a href="addrUpdate2.jsp?num=<%=addrBook.getNum()%>"><input type="button" class="view__button" value="수정"></a>
 					<a href="addrDelete.jsp?num=<%=addrBook.getNum()%>" onclick="return confirm('정말로 삭제하시겠습니까?')"><input type="button" class="view__button" value="삭제"></a>
+					<%	}; %>
 				</td>
 			</tr>
 		</table>

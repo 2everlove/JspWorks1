@@ -22,6 +22,12 @@ table, td, th{
 /* th, td{
 	padding: 10px 5px;
 } */
+
+ul, li{
+	margin: 0 auto;
+	list-style: none;
+}
+
 #table__2{
 	margin: 0 auto;
 	width: 500px;
@@ -43,3 +49,4 @@ table, td, th{
 #view__button:hover{
 	border: 1px solid black;
 }
+

@@ -31,6 +31,18 @@
 	
 	<%
 		abDAO.addAddress(addrBook);
+	
+		String email = request.getParameter("email");
+		boolean result = abDAO.checkLogin(email);	
+		
+		if(result)
+			session.setAttribute("sessionId", email); //다른 페이지 갈 수 있는 권한 설정		
+		else{
+		out.println("<script>");
+		out.println("alert('이메일이 일치하지 않습니다.')");
+		out.println("history.go(-1)"); //로그인 페이지로 돌아감  <--(-1) 이전페이지-->
+		out.println("</script>");
+		}
 	%>
 	
 	<div id="container">

@@ -8,6 +8,8 @@
 <!-- <script type="text/javascript">
 	/* function checkFor(){
 	    const form = document.addrForm;
+	    const id = form.username;
+	    const pwd = form.password;
 	    for(var i=0;i<form.username.value.length;i++){
 		
 		    var ch = form.username.value.charAt(i);
@@ -21,6 +23,7 @@
 <body>
 	<div id="container">
 		<h2>주소 등록</h2>
+		<P><a href="loginForm.jsp">[로그인]</a></P>
 		<hr>
 		<form name ="addrForm" action="addrAdd.jsp" method="post">
 			<table>
@@ -51,8 +54,6 @@
 						<input type="reset" value="취소">
 					</td>
 				</tr>
-				
-			
 			</table>
 		</form>
 	</div>

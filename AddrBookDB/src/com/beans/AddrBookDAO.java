@@ -89,7 +89,6 @@ public class AddrBookDAO implements Serializable {
 			}
 			rs.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 			disconnect();
@@ -137,5 +136,61 @@ public class AddrBookDAO implements Serializable {
 		}
 	}
 	
+	//주소 갱신(수정)
+	public void updateAddr(AddrBook addrBook) { //joinDate는 자동으로 추가되므로 add 불필요
+		connDB();
+		String sql = "UPDATE t_address SET username=?, tel=?, email=?, gender=? WHERE num=?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			//parameter setting with AddrBook
+			pstmt.setString(1, addrBook.getUsername());
+			pstmt.setString(2, addrBook.getTel());
+			pstmt.setString(3, addrBook.getEmail());
+			pstmt.setString(4, addrBook.getGender());
+			pstmt.setInt(5, addrBook.getNum());
+			//트랜잭션 수행완료
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnect();
+		}
+	}
+	
+	//로그인 체크
+	public boolean checkLogin(String email) {
+		connDB();
+		String sql = "select email from t_address where email=?";
+		try {
+			pstmt = conn.prepareStatement(sql); 
+			pstmt.setString(1, email);
+			rs = pstmt.executeQuery();  //sql qeury 실행문
+			if(rs.next()) 
+				return true; //이메일 일치
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnect();
+		}
+		return false;
+	}
+	
+	
+	public String nameToEmail(String email) {
+		connDB();
+		String sql = "select username from t_address where email=?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, email);
+			rs = pstmt.executeQuery();
+			rs.next(); //1개의 자료
+			return (String)rs.getString("username");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnect();
+		}
+		return email;
+	}
 	
 }

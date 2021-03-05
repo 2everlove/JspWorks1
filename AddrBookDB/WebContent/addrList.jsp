@@ -13,9 +13,22 @@
 <body>
 	<jsp:useBean id="abBook" class="com.beans.AddrBookDAO" scope="application"></jsp:useBean>
 	
+	<%
+		String sessionId = null;
+		if(session.getAttribute("sessionId") != null){
+			sessionId = (String)session.getAttribute("sessionId");
+		} else {
+			out.println("<script>");
+			out.println("alert('로그인을 해주세요')");
+			out.println("location.href='loginForm.jsp'");
+			out.println("</script>");
+		}
+	%>
+	
 	<div id="container">
 		<h2>주소 목록</h2>
-		<p><a href="addrForm.html">주소 추가</a></p>
+				<a href="logOut.jsp" onclick="alert('<%=abBook.nameToEmail((String)session.getAttribute("sessionId")) %>'+
+		    											'(<%=session.getAttribute("sessionId") %>)님이 로그아웃되었습니다.')">[로그 아웃]</a>
 		<hr>
 		<table>
 			<tr>
@@ -28,17 +41,19 @@
 			<%
 				for(int i=0; i<abBook.getListAll().size(); i++){
 					AddrBook addrBook = abBook.getListAll().get(i);
-				
 			%>
 			<tr>
 				<td><%= addrBook.getNum() %></td>
 				<td><%= addrBook.getUsername() %></td>
 				<td><%= addrBook.getGender() %></td>
 				<td><%= addrBook.getJoinDate() %></td>
+				<% if(abBook.nameToEmail((String)session.getAttribute("sessionId")).equals(addrBook.getUsername())){ %>
+				<td><a href="addrView.jsp?num=<%=addrBook.getNum()%>"><input type="button" value="보기" autofocus="autofocus"></a></td>
+				<% } else { %>
 				<td><a href="addrView.jsp?num=<%=addrBook.getNum()%>"><input type="button" value="보기"></a></td>
 			</tr>
 			<%
-				}
+				}}
 			%>
 		</table>
 	</div>
