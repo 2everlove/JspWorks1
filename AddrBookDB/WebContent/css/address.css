@@ -1,27 +1,29 @@
 @charset "UTF-8";
+
 *{
 	box-sizing: border-box;
 }
+
 #container{
 	width: 80%;
 	margin: 0 auto;
 	text-align: center;
 }
+
 hr{
 	margin-bottom: 20px;
 }
+
 table{
 	margin: 0 auto;
 	width: 300px;
 }
+
 table, td, th{
 	border: 1px solid #ccc;
 	border-collapse: collapse;
 	height:30px;
 }
-/* th, td{
-	padding: 10px 5px;
-} */
 
 ul, li{
 	margin: 0 auto;
@@ -32,6 +34,7 @@ ul, li{
 	margin: 0 auto;
 	width: 500px;
 }
+
 .wi{
 	width: 180px;
 }
@@ -46,7 +49,11 @@ ul, li{
 .view__button{
 	border: 1px solid #ccc;
 }
+
 #view__button:hover{
 	border: 1px solid black;
 }
 
+.list__active{
+	background-color: #eee;
+}

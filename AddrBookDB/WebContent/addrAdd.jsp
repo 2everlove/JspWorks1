@@ -12,21 +12,13 @@
 <body>
 	<!-- java -->
 	<jsp:useBean id="addrBook" class="com.beans.AddrBook"/>
-	<!-- set  -->
+	<!-- set // AddrBook addrBook = new AddrBook();  -->
 	<jsp:setProperty property="num" name="addrBook"/>
 	<jsp:setProperty property="username" name="addrBook"/>
 	<jsp:setProperty property="tel" name="addrBook"/>
 	<jsp:setProperty property="email" name="addrBook"/>
 	<jsp:setProperty property="gender" name="addrBook"/>
 	<jsp:setProperty property="joinDate" name="addrBook"/>
-	<%-- <!-- get  -->
-	<jsp:getProperty property="num" name="addrBook"/>
-	<jsp:getProperty property="username" name="addrBook"/>
-	<jsp:getProperty property="tel" name="addrBook"/>
-	<jsp:getProperty property="email" name="addrBook"/>
-	<jsp:getProperty property="gender" name="addrBook"/>
-	<jsp:getProperty property="joinDate" name="addrBook"/> --%>
-	<!-- java(DAO) -->
 	<jsp:useBean id="abDAO" class="com.beans.AddrBookDAO" scope="application"/>
 	
 	<%

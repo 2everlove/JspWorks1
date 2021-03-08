@@ -27,8 +27,8 @@
 	
 	<div id="container">
 		<h2>주소 목록</h2>
-				<a href="logOut.jsp" onclick="alert('<%=abBook.nameToEmail((String)session.getAttribute("sessionId")) %>'+
-		    											'(<%=session.getAttribute("sessionId") %>)님이 로그아웃되었습니다.')">[로그 아웃]</a>
+				<a href="logOut.jsp" onclick="alert('<%=abBook.nameToEmail(sessionId) %>'+
+		    											'(<%=sessionId %>)님이 로그아웃되었습니다.')">[로그 아웃]</a>
 		<hr>
 		<table>
 			<tr>
@@ -43,13 +43,17 @@
 					AddrBook addrBook = abBook.getListAll().get(i);
 			%>
 			<tr>
+				<% if(abBook.nameToEmail(sessionId).equals(addrBook.getUsername())){ %>
+				<td class="list__active"><%= addrBook.getNum() %></td>
+				<td class="list__active"><%= addrBook.getUsername() %></td>
+				<td class="list__active"><%= addrBook.getGender() %></td>
+				<td class="list__active"><%= addrBook.getJoinDate() %></td>
+				<td class="list__active"><a href="addrView.jsp?num=<%=addrBook.getNum()%>"><input type="button" value="보기" autofocus="autofocus"></a></td>
+				<% } else { %>
 				<td><%= addrBook.getNum() %></td>
 				<td><%= addrBook.getUsername() %></td>
 				<td><%= addrBook.getGender() %></td>
 				<td><%= addrBook.getJoinDate() %></td>
-				<% if(abBook.nameToEmail((String)session.getAttribute("sessionId")).equals(addrBook.getUsername())){ %>
-				<td><a href="addrView.jsp?num=<%=addrBook.getNum()%>"><input type="button" value="보기" autofocus="autofocus"></a></td>
-				<% } else { %>
 				<td><a href="addrView.jsp?num=<%=addrBook.getNum()%>"><input type="button" value="보기"></a></td>
 			</tr>
 			<%

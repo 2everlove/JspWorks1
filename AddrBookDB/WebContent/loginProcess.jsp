@@ -5,7 +5,8 @@
 	<%-- <jsp:setProperty property="email" name="abDAO"/> --%>
 	<%
 		String email = request.getParameter("email");
-		boolean result = abDAO.checkLogin(email);	
+		boolean result = abDAO.checkLogin(email);
+		String userName = abDAO.nameToEmail(email);
 		
 		if(result)
 			session.setAttribute("sessionId", email); //다른 페이지 갈 수 있는 권한 설정		
@@ -29,7 +30,7 @@
 <body>
 
 	<div id="container">
-		<h2><%=abDAO.nameToEmail((String)session.getAttribute("sessionId")) +"("+ session.getAttribute("sessionId") +")" %>으로 로그인 되었습니다.</h2>
+		<h2><%=userName +"("+ session.getAttribute("sessionId") +")" %>으로 로그인 되었습니다.</h2>
 		<a href="addrList.jsp" autofocus="autofocus" style="cursor: pointer;">[목록 보기]</a>
 	</div>
 	

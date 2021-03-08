@@ -176,15 +176,17 @@ public class AddrBookDAO implements Serializable {
 	}
 	
 	
-	public String nameToEmail(String email) {
+	public String nameToEmail(String email) { //getUserName
 		connDB();
 		String sql = "select username from t_address where email=?";
 		try {
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, email);
 			rs = pstmt.executeQuery();
-			rs.next(); //1개의 자료
-			return (String)rs.getString("username");
+			if(rs.next()) {
+				String username = rs.getString("username");
+				return username; //1개의 자료
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
