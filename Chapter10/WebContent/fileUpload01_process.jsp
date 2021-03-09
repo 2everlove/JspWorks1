@@ -17,14 +17,14 @@
 		String realFolder = "C:\\JspWorks1\\Chapter10\\WebContent\\upload";
 		MultipartRequest multi = new MultipartRequest(request, realFolder, 5*1024*1024, "utf-8", new DefaultFileRenamePolicy());
 		
-		//폼의 요청 name을 가져오기
+		//폼의 요청 일반 name을 가져오기
 		Enumeration<String> params = multi.getParameterNames(); //여러개의 이름 가져오기
 		while(params.hasMoreElements()){
 			String name = params.nextElement();
 			String value = multi.getParameter(name);
 			out.println(name + "=" + value + "<br>");
 		}
-		
+		out.println("=======================================================<br>");
 		//폼의 요청 file name 가져오기
 		Enumeration<String> files = multi.getFileNames();
 		while(files.hasMoreElements()){
@@ -39,11 +39,11 @@
 			out.println("실제 파일 이름 : "+original+"<br>");
 			out.println("파일 컨텐츠 유형 : "+type+"<br>");
 			if(file != null) 
-				out.println("파일 크기 : "+type+"<br>");
+				out.println("파일 크기 : "+file.length()/(1024*1024)+"Mb");
 	%>
 	
 	<p>이미지
-	<p><img alt="그림" src="upload/<%=fileName %>">
+	<p><img alt="그림" src="upload/<%=fileName %>" width=180 height=200>
 	
 	<% } %>
 </body>

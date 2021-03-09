@@ -12,6 +12,5 @@
 	<!-- 모델 model - 데이터 -->
 	<p><%=request.getAttribute("result") %> 입니다.</p>
 	<p>${result}</p>
-	
 </body>
 </html>

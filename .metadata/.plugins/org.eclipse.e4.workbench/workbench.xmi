@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_nprCEHcwEeunRqrTI-axxw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_nprCEXcwEeunRqrTI-axxw" bindingContexts="_npsR9ncwEeunRqrTI-axxw">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;mvc2.jsp&quot; tooltip=&quot;Chapter11/WebContent/mvc2.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter11/WebContent/mvc2.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MVCServlet.java&quot; tooltip=&quot;Chapter11/src/com/servlet/MVCServlet.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter11/src/com/servlet/MVCServlet.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;el01.jsp&quot; tooltip=&quot;Chapter11/WebContent/el01.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter11/WebContent/el01.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;mvc01.jsp&quot; tooltip=&quot;Chapter11/WebContent/mvc01.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter11/WebContent/mvc01.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;address.css&quot; tooltip=&quot;AddrBookDB/WebContent/css/address.css&quot;>&#xD;&#xA;&lt;persistable path=&quot;/AddrBookDB/WebContent/css/address.css&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;loginProcess.jsp&quot; tooltip=&quot;AddrBookDB/WebContent/loginProcess.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/AddrBookDB/WebContent/loginProcess.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;addrAdd.jsp&quot; tooltip=&quot;AddrBookDB/WebContent/addrAdd.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/AddrBookDB/WebContent/addrAdd.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditorNoSource&quot; name=&quot;OracleDriver.class&quot; tooltip=&quot;oracle.jdbc.driver.OracleDriver&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=AddrBookDB/C:\/JspWorks1\/AddrBookDB\/WebContent\/WEB-INF\/lib\/ojdbc8.jar&amp;lt;oracle.jdbc.driver(OracleDriver.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AddrBookDAO.java&quot; tooltip=&quot;AddrBookDB/src/com/beans/AddrBookDAO.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/AddrBookDB/src/com/beans/AddrBookDAO.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;addrList.jsp&quot; tooltip=&quot;AddrBookDB/WebContent/addrList.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/AddrBookDB/WebContent/addrList.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;loginForm.jsp&quot; tooltip=&quot;AddrBookDB/WebContent/loginForm.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/AddrBookDB/WebContent/loginForm.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;addrForm.html&quot; tooltip=&quot;AddrBookDB/WebContent/addrForm.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/AddrBookDB/WebContent/addrForm.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.wst.server.ui.editor.input.factory&quot; id=&quot;org.eclipse.wst.server.ui.editor&quot; name=&quot;Tomcat v9.0 Server at localhost&quot; tooltip=&quot;Tomcat v9.0 Server at localhost&quot;>&#xD;&#xA;&lt;persistable server-id=&quot;Tomcat v9.0 Server at localhost&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;addrDelete.jsp&quot; tooltip=&quot;AddrBookDB/WebContent/addrDelete.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/AddrBookDB/WebContent/addrDelete.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;member01_process_el.jsp&quot; tooltip=&quot;Chapter11/WebContent/member01_process_el.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter11/WebContent/member01_process_el.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;member01_process.jsp&quot; tooltip=&quot;Chapter11/WebContent/member01_process.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter11/WebContent/member01_process.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;member01.jsp&quot; tooltip=&quot;Chapter11/WebContent/member01.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter11/WebContent/member01.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;joinForm.jsp&quot; tooltip=&quot;Chapter05/WebContent/joinForm.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter05/WebContent/joinForm.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;joinInfo.jsp&quot; tooltip=&quot;Chapter05/WebContent/joinInfo.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter05/WebContent/joinInfo.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;onsubmit.jsp&quot; tooltip=&quot;Chapter07/WebContent/onsubmit.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter07/WebContent/onsubmit.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;joinProcess.jsp&quot; tooltip=&quot;Chapter07/WebContent/joinProcess.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter07/WebContent/joinProcess.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;loginForm.html&quot; tooltip=&quot;Chapter04/WebContent/loginForm.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter04/WebContent/loginForm.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;addrForm.html&quot; tooltip=&quot;Chapter11/WebContent/addrForm.html&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter11/WebContent/addrForm.html&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;mvc02.jsp&quot; tooltip=&quot;Chapter11/WebContent/mvc02.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter11/WebContent/mvc02.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MVCServlet.java&quot; tooltip=&quot;Chapter11/src/com/servlet/MVCServlet.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter11/src/com/servlet/MVCServlet.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;fileUpload01_process.jsp&quot; tooltip=&quot;Chapter10/WebContent/fileUpload01_process.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter10/WebContent/fileUpload01_process.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;fileUpload02_process.jsp&quot; tooltip=&quot;Chapter10/WebContent/fileUpload02_process.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter10/WebContent/fileUpload02_process.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;Enumeration.class&quot; tooltip=&quot;java.util.Enumeration&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=Chapter10/C:\/Program Files\/Java\/jdk-11.0.9\/lib\/jrt-fs.jar`java.base=/module=/true=/=/owner.project.facets=/java=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/11\/docs\/api\/=/&amp;lt;java.util(Enumeration.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditorNoSource&quot; name=&quot;MultipartRequest.class&quot; tooltip=&quot;com.oreilly.servlet.MultipartRequest&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=Chapter10/C:\/JspWorks1\/Chapter10\/WebContent\/WEB-INF\/lib\/cos.jar&amp;lt;com.oreilly.servlet(MultipartRequest.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;fileUpload02.jsp&quot; tooltip=&quot;Chapter10/WebContent/fileUpload02.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter10/WebContent/fileUpload02.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.genericeditor.GenericEditor&quot; name=&quot;server.xml&quot; tooltip=&quot;Servers/Tomcat v9.0 Server at localhost-config/server.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Servers/Tomcat v9.0 Server at localhost-config/server.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;fileUpload01.jsp&quot; tooltip=&quot;Chapter10/WebContent/fileUpload01.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Chapter10/WebContent/fileUpload01.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_nprCEXcwEeunRqrTI-axxw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_nprCEncwEeunRqrTI-axxw" label="%trimmedwindow.label.eclipseSDK" x="192" y="82" width="1549" height="838">
     <persistedState key="coolBarVisible" value="true"/>
@@ -70,7 +70,7 @@
           <tags>persp.actionSet:org.eclipse.wst.server.ui.internal.webbrowser.actionSet</tags>
           <tags>persp.actionSet:org.eclipse.debug.ui.breakpointActionSet</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_nprCFXcwEeunRqrTI-axxw" selectedElement="_nprCG3cwEeunRqrTI-axxw" horizontal="true">
-            <children xsi:type="basic:PartStack" xmi:id="_nprCFncwEeunRqrTI-axxw" elementId="topLeft" containerData="1242" selectedElement="_nprCF3cwEeunRqrTI-axxw">
+            <children xsi:type="basic:PartStack" xmi:id="_nprCFncwEeunRqrTI-axxw" elementId="topLeft" containerData="1436" selectedElement="_nprCF3cwEeunRqrTI-axxw">
               <children xsi:type="advanced:Placeholder" xmi:id="_nprCF3cwEeunRqrTI-axxw" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_nprqj3cwEeunRqrTI-axxw" closeable="true">
                 <tags>View</tags>
                 <tags>categoryTag:General</tags>
@@ -88,8 +88,8 @@
                 <tags>categoryTag:Java Browsing</tags>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_nprCG3cwEeunRqrTI-axxw" containerData="8758" selectedElement="_nprCHHcwEeunRqrTI-axxw">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_nprCHHcwEeunRqrTI-axxw" containerData="7574" selectedElement="_nprCHXcwEeunRqrTI-axxw" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_nprCG3cwEeunRqrTI-axxw" containerData="8564" selectedElement="_nprCHHcwEeunRqrTI-axxw">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_nprCHHcwEeunRqrTI-axxw" containerData="8465" selectedElement="_nprCHXcwEeunRqrTI-axxw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_nprCHXcwEeunRqrTI-axxw" elementId="org.eclipse.ui.editorss" containerData="7000" ref="_nprqG3cwEeunRqrTI-axxw"/>
                 <children xsi:type="basic:PartStack" xmi:id="_nprCHncwEeunRqrTI-axxw" elementId="topRight" toBeRendered="false" containerData="3000">
                   <children xsi:type="advanced:Placeholder" xmi:id="_nprCH3cwEeunRqrTI-axxw" elementId="org.eclipse.ui.views.minimap.MinimapView" toBeRendered="false" ref="_nprrXncwEeunRqrTI-axxw" closeable="true">
@@ -98,8 +98,8 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_nprCIHcwEeunRqrTI-axxw" containerData="2426" selectedElement="_nprCIXcwEeunRqrTI-axxw" horizontal="true">
-                <children xsi:type="basic:PartStack" xmi:id="_nprCIXcwEeunRqrTI-axxw" elementId="bottomRight" containerData="7001" selectedElement="_nprCJHcwEeunRqrTI-axxw">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_nprCIHcwEeunRqrTI-axxw" containerData="1535" selectedElement="_nprCIXcwEeunRqrTI-axxw" horizontal="true">
+                <children xsi:type="basic:PartStack" xmi:id="_nprCIXcwEeunRqrTI-axxw" elementId="bottomRight" containerData="7001" selectedElement="_nprCKHcwEeunRqrTI-axxw">
                   <children xsi:type="advanced:Placeholder" xmi:id="_nprCIncwEeunRqrTI-axxw" elementId="org.eclipse.ui.views.AllMarkersView" ref="_nprrfncwEeunRqrTI-axxw" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
@@ -410,7 +410,7 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_nprqF3cwEeunRqrTI-axxw" elementId="org.eclipse.ui.internal.introview" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Welcome" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.ViewIntroAdapterPart"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view>&#xD;&#xA;&lt;presentation currentPage=&quot;qroot&quot; restore=&quot;true&quot;/>&#xD;&#xA;&lt;standbyPart/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view>&#xD;&#xA;&lt;presentation currentPage=&quot;overview&quot; restore=&quot;true&quot;/>&#xD;&#xA;&lt;standbyPart/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_nprqGHcwEeunRqrTI-axxw" elementId="org.eclipse.ui.internal.introview">
@@ -425,47 +425,41 @@
       <tags>View</tags>
       <tags>categoryTag:Help</tags>
     </sharedElements>
-    <sharedElements xsi:type="advanced:Area" xmi:id="_nprqG3cwEeunRqrTI-axxw" elementId="org.eclipse.ui.editorss">
-      <children xsi:type="basic:PartStack" xmi:id="_Mfu54XfsEeu41tBr2GnnPw" elementId="PartStack@64103d7f" selectedElement="_I28g8H_REeuy7OfLzaCOVA">
+    <sharedElements xsi:type="advanced:Area" xmi:id="_nprqG3cwEeunRqrTI-axxw" elementId="org.eclipse.ui.editorss" selectedElement="_Mfu54XfsEeu41tBr2GnnPw">
+      <children xsi:type="basic:PartStack" xmi:id="_Mfu54XfsEeu41tBr2GnnPw" elementId="PartStack@64103d7f" selectedElement="_t1cIwICcEeuCkPCCwiGDoA">
         <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_xzmqgH-3Eeuy7OfLzaCOVA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="addrList.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;addrList.jsp&quot; partName=&quot;addrList.jsp&quot; title=&quot;addrList.jsp&quot; tooltip=&quot;AddrBookDB/WebContent/addrList.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AddrBookDB/WebContent/addrList.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1872&quot; selectionTopPixel=&quot;749&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>removeOnHide</tags>
-          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_Co0pQH-6Eeuy7OfLzaCOVA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="AddrBookDAO.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AddrBookDAO.java&quot; partName=&quot;AddrBookDAO.java&quot; title=&quot;AddrBookDAO.java&quot; tooltip=&quot;AddrBookDB/src/com/beans/AddrBookDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AddrBookDB/src/com/beans/AddrBookDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4834&quot; selectionTopPixel=&quot;3521&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_IfqFcICZEeuCkPCCwiGDoA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MVCServlet.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MVCServlet.java&quot; partName=&quot;MVCServlet.java&quot; title=&quot;MVCServlet.java&quot; tooltip=&quot;Chapter11/src/com/servlet/MVCServlet.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Chapter11/src/com/servlet/MVCServlet.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;897&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_TFvusH-6Eeuy7OfLzaCOVA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="addrAdd.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;addrAdd.jsp&quot; partName=&quot;addrAdd.jsp&quot; title=&quot;addrAdd.jsp&quot; tooltip=&quot;AddrBookDB/WebContent/addrAdd.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AddrBookDB/WebContent/addrAdd.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;912&quot; selectionTopPixel=&quot;67&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_S7ytIICZEeuCkPCCwiGDoA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="mvc02.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;mvc02.jsp&quot; partName=&quot;mvc02.jsp&quot; title=&quot;mvc02.jsp&quot; tooltip=&quot;Chapter11/WebContent/mvc02.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Chapter11/WebContent/mvc02.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;432&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_6KAigH-8Eeuy7OfLzaCOVA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="address.css" iconURI="platform:/plugin/org.eclipse.wst.css.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;address.css&quot; partName=&quot;address.css&quot; title=&quot;address.css&quot; tooltip=&quot;AddrBookDB/WebContent/css/address.css&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AddrBookDB/WebContent/css/address.css&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;680&quot; selectionTopPixel=&quot;639&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_LSztEICaEeuCkPCCwiGDoA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="loginForm.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;loginForm.html&quot; partName=&quot;loginForm.html&quot; title=&quot;loginForm.html&quot; tooltip=&quot;Chapter04/WebContent/loginForm.html&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Chapter04/WebContent/loginForm.html&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;365&quot; selectionTopPixel=&quot;44&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
-          <tags>org.eclipse.wst.css.core.csssource.source</tags>
+          <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_vUAHoH_PEeuy7OfLzaCOVA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="mvc01.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;mvc01.jsp&quot; partName=&quot;mvc01.jsp&quot; title=&quot;mvc01.jsp&quot; tooltip=&quot;Chapter11/WebContent/mvc01.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Chapter11/WebContent/mvc01.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;260&quot; selectionOffset=&quot;360&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_Zyzy0ICaEeuCkPCCwiGDoA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="member01.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;member01.jsp&quot; partName=&quot;member01.jsp&quot; title=&quot;member01.jsp&quot; tooltip=&quot;Chapter11/WebContent/member01.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Chapter11/WebContent/member01.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;690&quot; selectionTopPixel=&quot;458&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_D88sIH_REeuy7OfLzaCOVA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="MVCServlet.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MVCServlet.java&quot; partName=&quot;MVCServlet.java&quot; title=&quot;MVCServlet.java&quot; tooltip=&quot;Chapter11/src/com/servlet/MVCServlet.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Chapter11/src/com/servlet/MVCServlet.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;984&quot; selectionTopPixel=&quot;353&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_zDiQMICaEeuCkPCCwiGDoA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="member01_process.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;member01_process.jsp&quot; partName=&quot;member01_process.jsp&quot; title=&quot;member01_process.jsp&quot; tooltip=&quot;Chapter11/WebContent/member01_process.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Chapter11/WebContent/member01_process.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;413&quot; selectionTopPixel=&quot;264&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_I28g8H_REeuy7OfLzaCOVA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="mvc02.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;mvc02.jsp&quot; partName=&quot;mvc02.jsp&quot; title=&quot;mvc02.jsp&quot; tooltip=&quot;Chapter11/WebContent/mvc02.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Chapter11/WebContent/mvc02.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;435&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_t1cIwICcEeuCkPCCwiGDoA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="member01_process_el.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;member01_process_el.jsp&quot; partName=&quot;member01_process_el.jsp&quot; title=&quot;member01_process_el.jsp&quot; tooltip=&quot;Chapter11/WebContent/member01_process_el.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Chapter11/WebContent/member01_process_el.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;572&quot; selectionTopPixel=&quot;198&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
@@ -556,7 +550,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_nprrCXcwEeunRqrTI-axxw" elementId="org.eclipse.ui.console.ConsoleView" visible="false"/>
+      <toolbar xmi:id="_nprrCXcwEeunRqrTI-axxw" elementId="org.eclipse.ui.console.ConsoleView"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_nprrGHcwEeunRqrTI-axxw" elementId="org.eclipse.ui.views.BookmarkView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Bookmarks" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/bkmrk_nav.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.views.markers.BookmarksView"/>
@@ -624,11 +618,12 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Server</tags>
+      <tags>highlighted</tags>
       <menus xmi:id="_nprrY3cwEeunRqrTI-axxw" elementId="org.eclipse.wst.server.ui.ServersView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_nprrb3cwEeunRqrTI-axxw" elementId="org.eclipse.wst.server.ui.ServersView"/>
+      <toolbar xmi:id="_nprrb3cwEeunRqrTI-axxw" elementId="org.eclipse.wst.server.ui.ServersView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_nprreXcwEeunRqrTI-axxw" elementId="org.eclipse.ui.views.TaskList" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Tasks" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/tasks_tsk.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.views.markers.TasksView"/>
@@ -707,7 +702,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_nprrjHcwEeunRqrTI-axxw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_5X5AgH-lEeuy7OfLzaCOVA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_npthQncwEeunRqrTI-axxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_0X-rsIB7EeuCkPCCwiGDoA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_npthQncwEeunRqrTI-axxw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_nprrmXcwEeunRqrTI-axxw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -719,6 +714,9 @@
       <children xsi:type="menu:ToolBar" xmi:id="_nprrn3cwEeunRqrTI-axxw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_nprroHcwEeunRqrTI-axxw" elementId="additions" toBeRendered="false"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_13G8IIB7EeuCkPCCwiGDoA">
+        <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_nprr1ncwEeunRqrTI-axxw" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
         <tags>Draggable</tags>
@@ -747,7 +745,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_nprr-XcwEeunRqrTI-axxw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_5YBjYH-lEeuy7OfLzaCOVA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_nptg93cwEeunRqrTI-axxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_0YCWEIB7EeuCkPCCwiGDoA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_nptg93cwEeunRqrTI-axxw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-nJ50Hu3EeukUtggQXOTJw" elementId="org.eclipse.compare.CompareEditor" visible="false">
         <tags>Draggable</tags>
@@ -1044,6 +1042,7 @@
     <bindings xmi:id="_npsRFncwEeunRqrTI-axxw" keySequence="ALT+SHIFT+D J" command="_nptg8HcwEeunRqrTI-axxw"/>
     <bindings xmi:id="_npsRF3cwEeunRqrTI-axxw" keySequence="ALT+SHIFT+D Q" command="_nptgA3cwEeunRqrTI-axxw"/>
     <bindings xmi:id="_npsRGHcwEeunRqrTI-axxw" keySequence="ALT+CTRL+SHIFT+T" command="_nptiYncwEeunRqrTI-axxw"/>
+    <bindings xmi:id="_0Ccgk4B7EeuCkPCCwiGDoA" keySequence="CTRL+T" command="_0CFUOYB7EeuCkPCCwiGDoA"/>
   </bindingTables>
   <bindingTables xmi:id="_npsRGXcwEeunRqrTI-axxw" elementId="org.eclipse.jdt.ui.javaEditorScope" bindingContext="_npsR_3cwEeunRqrTI-axxw">
     <bindings xmi:id="_npsRGncwEeunRqrTI-axxw" keySequence="CTRL+SHIFT+P" command="_nptg2XcwEeunRqrTI-axxw"/>
@@ -1297,6 +1296,95 @@
     <bindings xmi:id="_npsR9HcwEeunRqrTI-axxw" keySequence="ALT+SHIFT+R" command="_nptez3cwEeunRqrTI-axxw"/>
     <bindings xmi:id="_npsR9XcwEeunRqrTI-axxw" keySequence="ALT+SHIFT+V" command="_nptesncwEeunRqrTI-axxw"/>
   </bindingTables>
+  <bindingTables xmi:id="_0CXoEIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.editor.DiagramEditorWithCellEditing" bindingContext="_0CIXhIB7EeuCkPCCwiGDoA">
+    <bindings xmi:id="_0CaEUIB7EeuCkPCCwiGDoA" keySequence="CTRL+SHIFT+CR" command="_0CFUOIB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CaEU4B7EeuCkPCCwiGDoA" keySequence="CTRL+CR" command="_0CF7VoB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CcgkoB7EeuCkPCCwiGDoA" keySequence="CTRL+T" command="_0CFUQYB7EeuCkPCCwiGDoA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_0CaEUYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.context.domain" bindingContext="_0CI-kYB7EeuCkPCCwiGDoA">
+    <bindings xmi:id="_0CaEUoB7EeuCkPCCwiGDoA" keySequence="CTRL+SHIFT+CR" command="_0CFUPYB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CaEVIB7EeuCkPCCwiGDoA" keySequence="CTRL+CR" command="_0CFUXYB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CeVwIB7EeuCkPCCwiGDoA" keySequence="CTRL+F" command="_0CF7UIB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0Cfj4IB7EeuCkPCCwiGDoA" keySequence="F2" command="_0CGiYYB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CinMIB7EeuCkPCCwiGDoA" keySequence="DEL" command="_0CGiUoB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0Cj1UIB7EeuCkPCCwiGDoA" keySequence="CR" command="_0CF7Q4B7EeuCkPCCwiGDoA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_0CaEVYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.term.ui.editor2.TermDictionaryEditor2" bindingContext="_0CI-koB7EeuCkPCCwiGDoA">
+    <bindings xmi:id="_0CaEVoB7EeuCkPCCwiGDoA" keySequence="CTRL+CR" command="_0CFUW4B7EeuCkPCCwiGDoA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_0CaEV4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.context.scriptEditor" bindingContext="_0CIXhoB7EeuCkPCCwiGDoA">
+    <bindings xmi:id="_0CaEWIB7EeuCkPCCwiGDoA" keySequence="CTRL+CR" command="_0CF7Y4B7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CbScYB7EeuCkPCCwiGDoA" keySequence="CTRL+/" command="_0CF7XoB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CbScoB7EeuCkPCCwiGDoA" keySequence="CTRL+SPACE" command="_0CF7WYB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0Cb5g4B7EeuCkPCCwiGDoA" keySequence="CTRL+SHIFT+F" command="_0CF7QoB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CgyAIB7EeuCkPCCwiGDoA" keySequence="CTRL+SHIFT+ARROW_DOWN" command="_0CEtIYB7EeuCkPCCwiGDoA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_0CaEWYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.context.viewScriptEditor" bindingContext="_0CI-kIB7EeuCkPCCwiGDoA">
+    <bindings xmi:id="_0CaEWoB7EeuCkPCCwiGDoA" keySequence="CTRL+CR" command="_0CF7Y4B7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CbScIB7EeuCkPCCwiGDoA" keySequence="CTRL+/" command="_0CF7XoB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0Cb5gIB7EeuCkPCCwiGDoA" keySequence="CTRL+SPACE" command="_0CF7WYB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0Cb5hIB7EeuCkPCCwiGDoA" keySequence="CTRL+SHIFT+F" command="_0CF7QoB7EeuCkPCCwiGDoA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_0CarYIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.validate.ui.ValidateViewPage" bindingContext="_0CIXgYB7EeuCkPCCwiGDoA">
+    <bindings xmi:id="_0CarYYB7EeuCkPCCwiGDoA" keySequence="CTRL+1" command="_0CGiU4B7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CgK-YB7EeuCkPCCwiGDoA" keySequence="F5" command="_0CFUUoB7EeuCkPCCwiGDoA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_0Cb5gYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.editor.DiagramEditor" bindingContext="_0CIXhYB7EeuCkPCCwiGDoA">
+    <bindings xmi:id="_0Cb5goB7EeuCkPCCwiGDoA" keySequence="CTRL+SHIFT+F" command="_0CFUUYB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CcgkIB7EeuCkPCCwiGDoA" keySequence="CTRL+R" command="_0CF7SIB7EeuCkPCCwiGDoA">
+      <parameters xmi:id="_0CcgkYB7EeuCkPCCwiGDoA" elementId="mode" name="mode" value="relations"/>
+    </bindings>
+    <bindings xmi:id="_0CdHoIB7EeuCkPCCwiGDoA" keySequence="CTRL+O" command="_0CF7WIB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CdusIB7EeuCkPCCwiGDoA" keySequence="CTRL+D" command="_0CGiYoB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CgK8IB7EeuCkPCCwiGDoA" keySequence="F3" command="_0CFUV4B7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CgK84B7EeuCkPCCwiGDoA" keySequence="F4" command="_0CFUV4B7EeuCkPCCwiGDoA">
+      <parameters xmi:id="_0CgK9IB7EeuCkPCCwiGDoA" elementId="mode" name="mode" value="logical"/>
+    </bindings>
+    <bindings xmi:id="_0CgK94B7EeuCkPCCwiGDoA" keySequence="F5" command="_0CFUV4B7EeuCkPCCwiGDoA">
+      <parameters xmi:id="_0CgK-IB7EeuCkPCCwiGDoA" elementId="mode" name="mode" value="physical"/>
+    </bindings>
+    <bindings xmi:id="_0CiAIIB7EeuCkPCCwiGDoA" keySequence="CTRL+ARROW_UP" command="_0CF7SIB7EeuCkPCCwiGDoA">
+      <parameters xmi:id="_0CiAIYB7EeuCkPCCwiGDoA" elementId="mode" name="mode" value="parentTables"/>
+    </bindings>
+    <bindings xmi:id="_0CiAIoB7EeuCkPCCwiGDoA" keySequence="CTRL+ARROW_DOWN" command="_0CF7SIB7EeuCkPCCwiGDoA">
+      <parameters xmi:id="_0CiAI4B7EeuCkPCCwiGDoA" elementId="mode" name="mode" value="childTables"/>
+    </bindings>
+    <bindings xmi:id="_0CiAJIB7EeuCkPCCwiGDoA" keySequence="ALT+DEL" command="_0CFUVYB7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CiAJYB7EeuCkPCCwiGDoA" keySequence="`" command="_0CEtI4B7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CinM4B7EeuCkPCCwiGDoA" keySequence="1" command="_0CF7boB7EeuCkPCCwiGDoA">
+      <parameters xmi:id="_0CinNIB7EeuCkPCCwiGDoA" elementId="toolEntryClass" name="toolEntryClass" value="com.tomato.exerd.palette.CSelectionToolEntry"/>
+    </bindings>
+    <bindings xmi:id="_0CinNYB7EeuCkPCCwiGDoA" keySequence="2" command="_0CF7boB7EeuCkPCCwiGDoA">
+      <parameters xmi:id="_0CinNoB7EeuCkPCCwiGDoA" elementId="toolEntryClass" name="toolEntryClass" value="com.tomato.exerd.palette.PanToolEntry"/>
+    </bindings>
+    <bindings xmi:id="_0CinN4B7EeuCkPCCwiGDoA" keySequence="3" command="_0CF7boB7EeuCkPCCwiGDoA">
+      <parameters xmi:id="_0CinOIB7EeuCkPCCwiGDoA" elementId="toolEntryClass" name="toolEntryClass" value="com.tomato.exerd.palette.NewTableToolEntry"/>
+    </bindings>
+    <bindings xmi:id="_0CjOQIB7EeuCkPCCwiGDoA" keySequence="4" command="_0CF7boB7EeuCkPCCwiGDoA">
+      <parameters xmi:id="_0CjOQYB7EeuCkPCCwiGDoA" elementId="toolEntryClass" name="toolEntryClass" value="com.tomato.exerd.palette.NewNonIdentifyingRelationToolEntry"/>
+    </bindings>
+    <bindings xmi:id="_0CjOQoB7EeuCkPCCwiGDoA" keySequence="5" command="_0CF7boB7EeuCkPCCwiGDoA">
+      <parameters xmi:id="_0CjOQ4B7EeuCkPCCwiGDoA" elementId="toolEntryClass" name="toolEntryClass" value="com.tomato.exerd.palette.NewIdentifyingRelationToolEntry"/>
+    </bindings>
+    <bindings xmi:id="_0CjORIB7EeuCkPCCwiGDoA" keySequence="6" command="_0CF7boB7EeuCkPCCwiGDoA">
+      <parameters xmi:id="_0CjORYB7EeuCkPCCwiGDoA" elementId="toolEntryClass" name="toolEntryClass" value="com.tomato.exerd.palette.NewNoteToolEntry"/>
+    </bindings>
+    <bindings xmi:id="_0CjORoB7EeuCkPCCwiGDoA" keySequence="SPACE" command="_npthA3cwEeunRqrTI-axxw"/>
+  </bindingTables>
+  <bindingTables xmi:id="_0CgK8YB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.modelview3.ModelView3" bindingContext="_0CIXgIB7EeuCkPCCwiGDoA">
+    <bindings xmi:id="_0CgK8oB7EeuCkPCCwiGDoA" keySequence="F3" command="_0CFUV4B7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CgK9YB7EeuCkPCCwiGDoA" keySequence="F4" command="_0CFUV4B7EeuCkPCCwiGDoA">
+      <parameters xmi:id="_0CgK9oB7EeuCkPCCwiGDoA" elementId="mode" name="mode" value="logical"/>
+    </bindings>
+    <bindings xmi:id="_0CgK-oB7EeuCkPCCwiGDoA" keySequence="F5" command="_0CFUV4B7EeuCkPCCwiGDoA">
+      <parameters xmi:id="_0CgK-4B7EeuCkPCCwiGDoA" elementId="mode" name="mode" value="physical"/>
+    </bindings>
+    <bindings xmi:id="_0CiAJoB7EeuCkPCCwiGDoA" keySequence="`" command="_0CEtI4B7EeuCkPCCwiGDoA"/>
+    <bindings xmi:id="_0CjOR4B7EeuCkPCCwiGDoA" keySequence="SPACE" command="_npthA3cwEeunRqrTI-axxw"/>
+  </bindingTables>
+  <bindingTables xmi:id="_0CinMYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.term.ui.editor.TermsEditor" bindingContext="_0CIXg4B7EeuCkPCCwiGDoA">
+    <bindings xmi:id="_0CinMoB7EeuCkPCCwiGDoA" keySequence="DEL" command="_nptfE3cwEeunRqrTI-axxw"/>
+  </bindingTables>
   <rootContext xmi:id="_npsR9ncwEeunRqrTI-axxw" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_npsR93cwEeunRqrTI-axxw" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.platform" name="In Windows" description="A window is open">
       <children xmi:id="_npsR-HcwEeunRqrTI-axxw" elementId="org.eclipse.e4.ui.contexts.views" contributorURI="platform:/plugin/org.eclipse.platform" name="%bindingcontext.name.bindingView"/>
@@ -1336,6 +1424,7 @@
         <children xmi:id="_npsSF3cwEeunRqrTI-axxw" elementId="org.eclipse.jdt.ui.propertiesEditorScope" name="Editing Properties Files" description="Editing Properties Files Context"/>
         <children xmi:id="_npsSGHcwEeunRqrTI-axxw" elementId="com.genuitec.eclipse.inlinesearch.context" name="Inline Search is Active"/>
         <children xmi:id="_npsSGXcwEeunRqrTI-axxw" elementId="com.genuitec.eclipse.genericeditor.genericEditorContext" name="in Generic Code Editor" description="When editing in the CodeTogether Remote Editor"/>
+        <children xmi:id="_0CIXhoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.context.scriptEditor" name="X&#xc2a4;&#xd06c;&#xb9bd;&#xd2b8; &#xd3b8;&#xc9d1;&#xc911;"/>
       </children>
       <children xmi:id="_npsSGncwEeunRqrTI-axxw" elementId="org.eclipse.compare.compareEditorScope" name="Comparing in an Editor" description="Comparing in an Editor"/>
       <children xmi:id="_npsSG3cwEeunRqrTI-axxw" elementId="org.eclipse.debug.ui.memoryview" name="In Memory View" description="In memory view"/>
@@ -1355,8 +1444,19 @@
       <children xmi:id="_npsSJ3cwEeunRqrTI-axxw" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView" name="In Terminal View" description="Show modified keyboard shortcuts in context menu"/>
       <children xmi:id="_npsSKHcwEeunRqrTI-axxw" elementId="org.eclipse.tm.terminal.TerminalContext" name="Terminal Typing Connected" description="Override ALT+x menu access keys while typing into the Terminal"/>
       <children xmi:id="_npsSKXcwEeunRqrTI-axxw" elementId="com.genuitec.eclipse.meExplorerScope" name="Project Explorer +"/>
+      <children xmi:id="_0CIXgIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.modelview3.ModelView3" name="eXERD &#xbaa8;&#xb378;"/>
+      <children xmi:id="_0CIXgYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.validate.ui.ValidateViewPage" name="&#xac80;&#xd1a0; &#xbdf0;&#xc5d0;&#xc11c;"/>
+      <children xmi:id="_0CIXgoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.termEditor" name="eXERD &#xc6a9;&#xc5b4; &#xd3b8;&#xc9d1;&#xae30;&#xc5d0;&#xc11c;(&#xc0ac;&#xc6a9;&#xc548;&#xd568;)">
+        <children xmi:id="_0CIXg4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.term.ui.editor.TermsEditor" name="eXERD &#xc6a9;&#xc5b4; &#xb9ac;&#xc2a4;&#xd2b8; &#xd3b8;&#xc9d1;&#xae30;&#xc5d0;&#xc11c;(&#xc0ac;&#xc6a9;&#xc548;&#xd568;)"/>
+      </children>
+      <children xmi:id="_0CIXhIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.editor.DiagramEditorWithCellEditing" name="ex ERD &#xb2e4;&#xc774;&#xc5b4;&#xadf8;&#xb7a8; &#xd3b8;&#xc9d1;&#xae30;(&#xc140;&#xc5d0;&#xb514;&#xd305; &#xc0c1;&#xd0dc; &#xd3ec;&#xd568;)">
+        <children xmi:id="_0CIXhYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.editor.DiagramEditor" name="eX ERD &#xb2e4;&#xc774;&#xc5b4;&#xadf8;&#xb7a8; &#xd3b8;&#xc9d1;&#xae30;" description="eX ERD &#xb2e4;&#xc774;&#xc5b4;&#xadf8;&#xb7a8; &#xd3b8;&#xc9d1;&#xae30;"/>
+      </children>
+      <children xmi:id="_0CI-kYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.context.domain" name="&#xb3c4;&#xba54;&#xc778; &#xbdf0;&#xc5d0;&#xc11c;" description="&#xb3c4;&#xba54;&#xc778; &#xbdf0;"/>
+      <children xmi:id="_0CI-koB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.term.ui.editor2.TermDictionaryEditor2" name="eXERD &#xc6a9;&#xc5b4; &#xb9ac;&#xc2a4;&#xd2b8; &#xd3b8;&#xc9d1;&#xae30;&#xc5d0;&#xc11c;"/>
     </children>
     <children xmi:id="_npsSKncwEeunRqrTI-axxw" elementId="org.eclipse.ui.contexts.dialog" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs" description="A dialog is open"/>
+    <children xmi:id="_0CI-kIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.context.viewScriptEditor" name="X&#xc2a4;&#xd06c;&#xb9bd;&#xd2b8; &#xbdf0; &#xd3b8;&#xc9d1;&#xc911;"/>
   </rootContext>
   <rootContext xmi:id="_npsSK3cwEeunRqrTI-axxw" elementId="org.eclipse.ui.contexts.workbenchMenu" name="Workbench Menu" description="When no Workbench windows are active"/>
   <rootContext xmi:id="_npsSLHcwEeunRqrTI-axxw" elementId="org.eclipse.jdt.ui.breadcrumbEditorScope" name="Editor Breadcrumb Navigation" description="Editor Breadcrumb Navigation Context"/>
@@ -1802,6 +1902,36 @@
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.tm.terminal.view.ui"/>
     <tags>View</tags>
     <tags>categoryTag:Other</tags>
+  </descriptors>
+  <descriptors xmi:id="_0WihQIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.views.thumbnail" label="&#xc378;&#xb124;&#xc77c;" iconURI="platform:/plugin/com.tomato.exerd.core/icon/common/thumbnail.gif" tooltip="" category="eXERD" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.tomato.exerd.thumbnail.ThumbnailView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.tomato.exerd.core"/>
+    <tags>View</tags>
+    <tags>categoryTag:eXERD</tags>
+  </descriptors>
+  <descriptors xmi:id="_0Wk9gIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.views.domain" label="&#xb3c4;&#xba54;&#xc778;" iconURI="platform:/plugin/com.tomato.exerd.core/icon/model/domain.gif" tooltip="" category="eXERD" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.tomato.exerd.domain.DomainView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.tomato.exerd.core"/>
+    <tags>View</tags>
+    <tags>categoryTag:eXERD</tags>
+  </descriptors>
+  <descriptors xmi:id="_0Wk9gYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.validate.ui.ValidateView" label="&#xac80;&#xd1a0;" iconURI="platform:/plugin/com.tomato.exerd.core/icon/common/valid.gif" tooltip="" category="eXERD" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.tomato.exerd.validate.ui.ValidateView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.tomato.exerd.core"/>
+    <tags>View</tags>
+    <tags>categoryTag:eXERD</tags>
+  </descriptors>
+  <descriptors xmi:id="_0WlkkIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.modelview3.ModelView3" label="&#xbaa8;&#xb378;" iconURI="platform:/plugin/com.tomato.exerd.modelview/icon/model.gif" tooltip="" category="eXERD" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.tomato.exerd.modelview.ModelView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.tomato.exerd.modelview"/>
+    <tags>View</tags>
+    <tags>categoryTag:eXERD</tags>
+  </descriptors>
+  <descriptors xmi:id="_0WmLoIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.xscript.ScriptView" label="XScript" iconURI="platform:/plugin/com.tomato.exerd.xscript/icons/script.gif" tooltip="" category="eXERD" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.tomato.exerd.xscript.ScriptView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.tomato.exerd.xscript"/>
+    <tags>View</tags>
+    <tags>categoryTag:eXERD</tags>
   </descriptors>
   <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
     <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
@@ -3187,6 +3317,150 @@
   <commands xmi:id="_nptimHcwEeunRqrTI-axxw" elementId="com.genuitec.eclipse.codetogether.start" commandName="Start Hosting Session" description="Collaborate with CodeTogether" category="_nptizncwEeunRqrTI-axxw"/>
   <commands xmi:id="_nptimXcwEeunRqrTI-axxw" elementId="com.genuitec.myeclipse.help.darktheme.commandid" commandName="com.genuitec.myeclipse.help.darktheme.commandid"/>
   <commands xmi:id="_nptimncwEeunRqrTI-axxw" elementId="com.genuitec.migrate.to.codemix" commandName="com.genuitec.migrate.to.codemix"/>
+  <commands xmi:id="_0CEtIIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.domain.export" commandName="&#xb3c4;&#xba54;&#xc778; &#xb0b4;&#xbcf4;&#xb0b4;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CEtIYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.sendScriptToView" commandName="X&#xc2a4;&#xd06c;&#xb9bd;&#xd2b8; &#xbdf0;&#xb85c; &#xbcf4;&#xb0b4;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CEtIoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.editstyle" commandName="&#xc2a4;&#xd0c0;&#xc77c; &#xc9c0;&#xc815;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CEtI4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.setName" commandName="&#xbe60;&#xb978; &#xd3b8;&#xc9d1;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CEtJIB7EeuCkPCCwiGDoA" elementId="target" name="&#xc774;&#xb984; &#xbcc0;&#xacbd; &#xb300;&#xc0c1;(&#xc0dd;&#xb7b5;&#xc2dc; &#xd504;&#xb77c;&#xc774;&#xba38;&#xb9ac; &#xc140;&#xb809;&#xc158;) : [diagram]"/>
+  </commands>
+  <commands xmi:id="_0CFUMIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.modelview.command1" commandName="&#xbaa8;&#xb378;&#xbdf0;" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CFUMYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.copyColumnFilterToSameTables" commandName="&#xb3d9;&#xc77c;&#xd55c; &#xc5c5;&#xbb34;&#xc601;&#xc5ed;&#xc758; &#xb2e4;&#xb978; &#xb2e4;&#xc774;&#xc5b4;&#xadf8;&#xb7a8;&#xc5d0;&#xb3c4; &#xb3d9;&#xc77c; &#xc124;&#xc815; &#xc801;&#xc6a9;" description="&#xb2e4;&#xb978; &#xb2e4;&#xc774;&#xc5b4;&#xadf8;&#xb7a8;&#xb4e4;&#xc5d0; &#xb193;&#xc778; &#xac19;&#xc740; &#xd14c;&#xc774;&#xbe14;&#xb4e4;&#xc5d0; &#xb300;&#xd574; &#xb3d9;&#xc77c;&#xd55c; &#xd544;&#xd130;&#xb97c; &#xc801;&#xc6a9;&#xd569;&#xb2c8;&#xb2e4;." category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUMoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.forward.command.forwardEngineering" commandName="&#xd3ec;&#xc6cc;&#xb4dc; &#xc5d4;&#xc9c0;&#xb2c8;&#xc5b4;&#xb9c1;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUM4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.fold" commandName="&#xd3bc;&#xce58;&#xae30; / &#xc811;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CFUNIB7EeuCkPCCwiGDoA" elementId="level" name="level" optional="false"/>
+  </commands>
+  <commands xmi:id="_0CFUNYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.newDiagram" commandName="&#xc0c8; &#xb2e4;&#xc774;&#xc5b4;&#xadf8;&#xb7a8; &#xcd94;&#xac00;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUNoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.setActiveSchema" commandName="&#xd65c;&#xc131; &#xc2a4;&#xd0a4;&#xb9c8;&#xb85c; &#xc9c0;&#xc815;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUN4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.xscript.command.openScriptView" commandName="&#xc2a4;&#xd06c;&#xb9bd;&#xd2b8; &#xc791;&#xc131;" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CFUOIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.createPrimaryKey" commandName="&#xd504;&#xb77c;&#xc774;&#xba38;&#xb9ac; &#xd0a4; &#xcd94;&#xac00;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUOYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.term.ui.command.setTag" commandName="&#xd0dc;&#xadf8; &#xc9c0;&#xc815;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUOoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.xscript.command.loadXScript" commandName="X&#xc2a4;&#xd06c;&#xb9bd;&#xd2b8; &#xc5f4;&#xae30;" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CFUO4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.changeViewSettingPreset" commandName="&#xbcf4;&#xae30; &#xc124;&#xc815; &#xd504;&#xb9ac;&#xc14b; &#xbcc0;&#xacbd;" category="_nptiyHcwEeunRqrTI-axxw">
+    <parameters xmi:id="_0CFUPIB7EeuCkPCCwiGDoA" elementId="name" name="&#xbcf4;&#xae30; &#xc124;&#xc815; &#xc774;&#xb984;" optional="false"/>
+  </commands>
+  <commands xmi:id="_0CFUPYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.createChildDomain" commandName="&#xc790;&#xc2dd; &#xb3c4;&#xba54;&#xc778; &#xcd94;&#xac00;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUPoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.intro.showsample" commandName="eXERD &#xc0d8;&#xd50c; &#xbcf4;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CFUP4B7EeuCkPCCwiGDoA" elementId="zip" name="ZIP &#xd30c;&#xc77c; &#xc774;&#xb984;" optional="false"/>
+    <parameters xmi:id="_0CFUQIB7EeuCkPCCwiGDoA" elementId="fileToOpen" name="&#xc608;&#xc81c; &#xc0dd;&#xc131;&#xd6c4; &#xc5d0;&#xb514;&#xd130;&#xc5d0;&#xc11c; &#xc5f4;&#xb9b4; &#xd30c;&#xc77c;"/>
+  </commands>
+  <commands xmi:id="_0CFUQYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.openTableSelectionDialog" commandName="&#xd14c;&#xc774;&#xbe14; &#xcc3e;&#xae30;" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CFUQoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.createTable" commandName="&#xd14c;&#xc774;&#xbe14; &#xcd94;&#xac00;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CFUQ4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.commandParameter.with" name="with"/>
+  </commands>
+  <commands xmi:id="_0CFURIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.xscript.command.importXScript" commandName="X&#xc2a4;&#xd06c;&#xb9bd;&#xd2b8; &#xcd94;&#xac00;" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CFURYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.filterTable" commandName="&#xceec;&#xb7fc; &#xd45c;&#xc2dc; &#xc124;&#xc815;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CFURoB7EeuCkPCCwiGDoA" elementId="filter" name="filter" optional="false"/>
+  </commands>
+  <commands xmi:id="_0CFUR4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.compare.file" commandName="&#xd30c;&#xc77c; &#xbe44;&#xad50;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUSIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.align" commandName="&#xc815;&#xb82c;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CFUSYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.align.type" name="&#xc815;&#xb82c; &#xd0c0;&#xc785;" optional="false"/>
+  </commands>
+  <commands xmi:id="_0CFUSoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.newFunction" commandName="&#xd391;&#xc158; &#xcd94;&#xac00;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CFUS4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.commandParameter.with" name="with"/>
+  </commands>
+  <commands xmi:id="_0CFUTIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.erwin.command.import" commandName="ERwin XML" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CFUTYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.domain.import" commandName="&#xb3c4;&#xba54;&#xc778; &#xac00;&#xc838;&#xc624;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUToB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.confirmversion" commandName="eXERD &#xbc84;&#xc804; &#xd655;&#xc778;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUT4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.newView" commandName="&#xbdf0; &#xcd94;&#xac00;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CFUUIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.commandParameter.with" name="with"/>
+  </commands>
+  <commands xmi:id="_0CFUUYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.autoAllocate" commandName="&#xc790;&#xb3d9; &#xbc30;&#xce58;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUUoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.refreshValidation" commandName="&#xbaa8;&#xb378; &#xac80;&#xc0ac;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUU4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.editDiagramOrder" commandName="&#xb2e4;&#xc774;&#xc5b4;&#xadf8;&#xb7a8; &#xc21c;&#xc11c; &#xbcc0;&#xacbd;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUVIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.propertyPage" commandName="&#xc18d;&#xc131; &#xb300;&#xd654;&#xc0c1;&#xc790;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUVYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.deleteModel" commandName="DB &#xbaa8;&#xb378;&#xc5d0;&#xc11c; &#xc9c0;&#xc6b0;&#xae30;" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CFUVoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.configTermDictionary" commandName="&#xc6a9;&#xc5b4; &#xc0ac;&#xc804; &#xc124;&#xc815;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUV4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.changeInteractionMode" commandName="&#xb17c;&#xb9ac; &#xbb3c;&#xb9ac; &#xbaa8;&#xb4dc; &#xbcc0;&#xacbd;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CFUWIB7EeuCkPCCwiGDoA" elementId="mode" name="&#xc778;&#xd130;&#xc561;&#xc158; &#xbaa8;&#xb4dc;" optional="false"/>
+  </commands>
+  <commands xmi:id="_0CFUWYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.view.domain.sort.ascending" commandName="&#xb3c4;&#xba54;&#xc778; &#xc624;&#xb984;&#xcc28;&#xc21c; &#xc815;&#xb82c;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUWoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.crop" commandName="&#xc120;&#xd0dd; &#xc694;&#xc18c;&#xb9cc; &#xb0a8;&#xae30;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUW4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.term.ui.command.newTerm" commandName="&#xc0c8; &#xc6a9;&#xc5b4; &#xb9cc;&#xb4e4;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUXIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.binaryDump" commandName="&#xbc14;&#xc774;&#xb108;&#xb9ac; &#xb364;&#xd504; &#xd30c;&#xc77c; &#xc0dd;&#xc131;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUXYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.createDomain" commandName="&#xb3c4;&#xba54;&#xc778; &#xcd94;&#xac00;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CFUXoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.compare.database" commandName="&#xb370;&#xc774;&#xd130; &#xbca0;&#xc774;&#xc2a4;&#xc640; &#xbe44;&#xad50;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7QIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.report.database.command.reportmodel" commandName="&#xbaa8;&#xb378;" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CF7QYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.closeOtherDiagrams" commandName="&#xb2e4;&#xb978; &#xb2e4;&#xc774;&#xc5b4;&#xadf8;&#xb7a8;&#xb4e4; &#xb2eb;&#xae30;" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CF7QoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.xscript.format" commandName="&#xcf54;&#xb4dc; &#xbaa8;&#xc591; &#xb2e4;&#xb4ec;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7Q4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.editValue" commandName="&#xac12; &#xd3b8;&#xc9d1;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7RIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.setColumnColorTag" commandName="&#xc0c9;&#xc0c1; &#xd0dc;&#xadf8; &#xbd99;&#xc774;&#xae30;" category="_nptiyHcwEeunRqrTI-axxw">
+    <parameters xmi:id="_0CF7RYB7EeuCkPCCwiGDoA" elementId="color" name="&#xd0dc;&#xadf8; &#xc0c9;&#xc0c1;" typeId="paramTypeRGB"/>
+  </commands>
+  <commands xmi:id="_0CF7RoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.reverse.reverseDatabaseToModel" commandName="&#xb9ac;&#xbc84;&#xc2a4; &#xc5d4;&#xc9c0;&#xb2c8;&#xc5b4;&#xb9c1;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CF7R4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.reverse.commandParameter1" name="name"/>
+  </commands>
+  <commands xmi:id="_0CF7SIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.select" commandName="&#xc120;&#xd0dd;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CF7SYB7EeuCkPCCwiGDoA" elementId="mode" name="&#xc120;&#xd0dd; &#xbaa8;&#xb4dc;" optional="false"/>
+  </commands>
+  <commands xmi:id="_0CF7SoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.toogleColumnVisible" commandName="&#xceec;&#xb7fc; &#xbcf4;&#xae30; &#xc124;&#xc815;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CF7S4B7EeuCkPCCwiGDoA" elementId="cellType" name="&#xc140; &#xd0c0;&#xc785;" optional="false"/>
+  </commands>
+  <commands xmi:id="_0CF7TIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.term.ui.command.export" commandName="&#xc6a9;&#xc5b4;&#xc0ac;&#xc804; &#xb0b4;&#xbcf4;&#xb0b4;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7TYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.exportModel" commandName="&#xd15c;&#xd50c;&#xb9bf;" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CF7ToB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.view.domain.sort.descending" commandName="&#xb3c4;&#xba54;&#xc778; &#xb0b4;&#xb9bc;&#xcc28;&#xc21c; &#xc815;&#xb82c;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7T4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.sortPrimaryKey" commandName="&#xd504;&#xb77c;&#xc774;&#xba38;&#xb9ac; &#xd0a4; &#xc815;&#xb82c;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7UIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.view.domain.search" commandName="&#xb3c4;&#xba54;&#xc778; &#xac80;&#xc0c9;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7UYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.printsetup" commandName="&#xc778;&#xc1c4; &#xc124;&#xc815;" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CF7UoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.preference" commandName="&#xd658;&#xacbd;&#xc124;&#xc815;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7U4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.xscript.command.XScriptWizard" commandName="&#xc815;&#xc758;&#xb41c; X&#xc2a4;&#xd06c;&#xb9bd;&#xd2b8; &#xc2e4;&#xd589;" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CF7VIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.newSchema" commandName="&#xc2a4;&#xd0a4;&#xb9c8; &#xcd94;&#xac00;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7VYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.duplicateDiagram" commandName="&#xb2e4;&#xc774;&#xc5b4;&#xadf8;&#xb7a8; &#xc0ac;&#xbcf8; &#xb9cc;&#xb4e4;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7VoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.createColumn" commandName="&#xceec;&#xb7fc; &#xcd94;&#xac00;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7V4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.term.ui.command.import" commandName="&#xc6a9;&#xc5b4;&#xc0ac;&#xc804; &#xb4e4;&#xc5ec;&#xc624;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7WIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.quickTableAccess" commandName="&#xd14c;&#xc774;&#xbe14; &#xac1c;&#xc694; &#xbcf4;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7WYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.contentassist" commandName="&#xcee8;&#xd150;&#xd2b8; &#xc5b4;&#xc2dc;&#xc2a4;&#xd2b8;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7WoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.modelview.ui.command.newBusinessArea" commandName="&#xc0c8; &#xc5c5;&#xbb34;&#xc601;&#xc5ed; &#xcd94;&#xac00;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7W4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.hideRelation" commandName="&#xad00;&#xacc4; &#xac10;&#xcd94;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7XIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.sendToBusinessArea" commandName="&#xc5c5;&#xbb34;&#xc601;&#xc5ed;&#xc73c;&#xb85c; &#xbcf4;&#xb0b4;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CF7XYB7EeuCkPCCwiGDoA" elementId="businessAreaName" name="&#xc5c5;&#xbb34;&#xc601;&#xc5ed;&#xc758; &#xc774;&#xb984;" optional="false"/>
+  </commands>
+  <commands xmi:id="_0CF7XoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.xscript.comment" commandName="&#xc8fc;&#xc11d;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7X4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.setActiveBusinessArea" commandName="&#xd65c;&#xc131; &#xc5c5;&#xbb34;&#xc601;&#xc5ed;&#xc73c;&#xb85c; &#xc9c0;&#xc815;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7YIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.convertToXml" commandName="ERD&#xd30c;&#xc77c;&#xc744; XML&#xb85c; &#xc804;&#xd658;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7YYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.domain.import2" commandName="&#xb3c4;&#xba54;&#xc778; &#xac00;&#xc838;&#xc624;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7YoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.setPrimaryKey" commandName="&#xd504;&#xb77c;&#xc774;&#xba38;&#xb9ac;&#xd0a4;&#xb85c; &#xc9c0;&#xc815;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7Y4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.executeXScript" commandName="X&#xc2a4;&#xd06c;&#xb9bd;&#xd2b8; &#xc2e4;&#xd589;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7ZIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.restoreExerdPerspective" commandName="eXERD Perspective &#xbcf5;&#xc6d0;" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CF7ZYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.term.ui.command.reverse" commandName="&#xc6a9;&#xc5b4;&#xc0ac;&#xc804; &#xc5ed;&#xacf5;&#xd559;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7ZoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.closeDiagram" commandName="&#xb2e4;&#xc774;&#xc5b4;&#xadf8;&#xb7a8; &#xb2eb;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7Z4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.setColor" commandName="&#xc0c9;&#xc0c1; &#xbcc0;&#xacbd;" category="_nptiyHcwEeunRqrTI-axxw">
+    <parameters xmi:id="_0CF7aIB7EeuCkPCCwiGDoA" elementId="colorProperty" name="&#xbcc0;&#xacbd;&#xd560; &#xc0c9;&#xc0c1;&#xc774; &#xc801;&#xc6a9;&#xb420; &#xc18d;&#xc131; id"/>
+    <parameters xmi:id="_0CF7aYB7EeuCkPCCwiGDoA" elementId="preset" name="&#xd504;&#xb9ac;&#xc14b;"/>
+  </commands>
+  <commands xmi:id="_0CF7aoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.forward.command.forwardEngineering.dev" commandName="&#xd3ec;&#xc6cc;&#xb4dc; &#xc5d4;&#xc9c0;&#xb2c8;&#xc5b4;&#xb9c1; (&#xac1c;&#xbc1c; &#xbaa8;&#xb4dc;)" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7a4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.toggleTermDictionary" commandName="&#xc6a9;&#xc5b4;&#xc0ac;&#xc804; &#xcf2c;/&#xb054;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7bIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.showRegisterKeyPage" commandName="&#xc81c;&#xd488; &#xb4f1;&#xb85d;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7bYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.showDomainMappingTable" commandName="&#xb3c4;&#xba54;&#xc778; &#xb9e4;&#xd551; &#xd14c;&#xc774;&#xbe14; &#xbcf4;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7boB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.changeActiveTool" commandName="&#xd234; &#xbcc0;&#xacbd;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CF7b4B7EeuCkPCCwiGDoA" elementId="toolEntryClass" name="&#xd234; &#xc5d4;&#xd2b8;&#xb9ac; &#xd074;&#xb798;&#xc2a4;" optional="false"/>
+  </commands>
+  <commands xmi:id="_0CF7cIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.customizeCells" commandName="&#xbcf4;&#xae30; &#xc124;&#xc815; &#xbcc0;&#xacbd;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7cYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.batchProcess" commandName="&#xc77c;&#xad04;&#xc791;&#xc5c5;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CF7coB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.modelview.ui.command.newDiagram" commandName="&#xc0c8; &#xb2e4;&#xc774;&#xc5b4;&#xadf8;&#xb7a8; &#xcd94;&#xac00;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CGiUIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.openDomain" commandName="&#xb3c4;&#xba54;&#xc778; &#xc5f4;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CGiUYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.term.ui.command.batch" commandName="&#xc6a9;&#xc5b4; &#xc77c;&#xad04; &#xd3b8;&#xc9d1;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CGiUoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.removeDomain" commandName="&#xb3c4;&#xba54;&#xc778; &#xc0ad;&#xc81c;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CGiU4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.assistValidationResult" commandName="&#xac80;&#xd1a0; &#xacb0;&#xacfc; &#xc790;&#xb3d9; &#xc9c0;&#xc6d0;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CGiVIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.generateDiagram" commandName="&#xb2e4;&#xc774;&#xc5b4;&#xadf8;&#xb7a8; &#xc0dd;&#xc131;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CGiVYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.changeTableTheme" commandName="&#xd14c;&#xc774;&#xbe14; &#xd14c;&#xb9c8; &#xbcc0;&#xacbd;" category="_nptiyHcwEeunRqrTI-axxw">
+    <parameters xmi:id="_0CGiVoB7EeuCkPCCwiGDoA" elementId="themeLiteral" name="TableTheme Enum &#xb9ac;&#xd130;&#xb7f4;" optional="false"/>
+  </commands>
+  <commands xmi:id="_0CGiV4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.newProcedure" commandName="&#xd504;&#xb85c;&#xc2dc;&#xc800; &#xcd94;&#xac00;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CGiWIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.commandParameter.with" name="with"/>
+  </commands>
+  <commands xmi:id="_0CGiWYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.toggleColumnHeaderVisible" commandName="&#xd14c;&#xc774;&#xbe14; &#xd5e4;&#xb354; &#xbcf4;&#xc774;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CGiWoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.changePerspective" commandName="&#xbcf4;&#xae30; &#xbc29;&#xc2dd;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CGiW4B7EeuCkPCCwiGDoA" elementId="perspectiveType" name="&#xd37c;&#xc2a4;&#xd399;&#xd2f0;&#xbe0c; &#xd0c0;&#xc785;"/>
+  </commands>
+  <commands xmi:id="_0CGiXIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.sendToSchema" commandName="&#xc2a4;&#xd0a4;&#xb9c8;&#xb85c; &#xbcf4;&#xb0b4;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA">
+    <parameters xmi:id="_0CGiXYB7EeuCkPCCwiGDoA" elementId="schemaName" name="&#xc2a4;&#xd0a4;&#xb9c8; &#xc774;&#xb984;" optional="false"/>
+  </commands>
+  <commands xmi:id="_0CGiXoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.term.ui.command.newTag" commandName="&#xc0c8; &#xd0dc;&#xadf8; &#xb9cc;&#xb4e4;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CGiX4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.debug" commandName="&#xb514;&#xbc84;&#xadf8;" category="_nptiyHcwEeunRqrTI-axxw"/>
+  <commands xmi:id="_0CGiYIB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.import" commandName="eXERD &#xac00;&#xc838;&#xc624;&#xae30;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CGiYYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.rename" commandName="&#xc774;&#xb984; &#xd3b8;&#xc9d1;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CGiYoB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.command.switchDiagram" commandName="&#xb2e4;&#xc774;&#xc5b4;&#xadf8;&#xb7a8; &#xc804;&#xd658;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
+  <commands xmi:id="_0CGiY4B7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.core.ui.command.fitToGrid" commandName="&#xaca9;&#xc790; &#xb9de;&#xcda4;" category="_0CEGEYB7EeuCkPCCwiGDoA"/>
   <addons xmi:id="_nptim3cwEeunRqrTI-axxw" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_nptinHcwEeunRqrTI-axxw" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_nptinXcwEeunRqrTI-axxw" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -3243,4 +3517,5 @@
   <categories xmi:id="_nptizXcwEeunRqrTI-axxw" elementId="com.genuitec.eclipse.lsp4e.commandCategory" name="Command"/>
   <categories xmi:id="_nptizncwEeunRqrTI-axxw" elementId="com.genuitec.eclipse.codetogether.category" name="CodeTogether" description="CodeTogether Commands"/>
   <categories xmi:id="_nptiz3cwEeunRqrTI-axxw" elementId="com.genuitec.eclipse.inlinesearch.commands.category" name="Inline Search"/>
+  <categories xmi:id="_0CEGEYB7EeuCkPCCwiGDoA" elementId="com.tomato.exerd.ui.commands.category" name="eXERD Command Category"/>
 </application:Application>
