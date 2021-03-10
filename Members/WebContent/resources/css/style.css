@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+*{box-sizing: border-box;}
+#container{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.title{
+	height: 150px;
+	font-size: 1.5em;
+	background-color: #eee;
+	line-height: 6em;
+	margin-bottom: 50px;
+}
+nav{
+	text-align: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	display: inline;
+	margin-left: 20px;
+	padding: 5px 10px;
+	border-top: 2px solid black;
+	line-height: 10px;
+}
+nav ul li:hover{
+	background-color: #eee;
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	padding: 5px 10px;
+}
+form{
+	text-align: center;
+}
+table, th, td, #memberForm__table-FstColumn{
+	text-align: center;
+	border: 1px solid #eee;
+	border-collapse: collapse;
+}
+table{
+	width: 600px;
+	margin: 0 auto;
+}
+th, td{
+	height: 30px;
+	padding: 10px 10px;
+}
+#memberForm__table-FstColumn{
+	height: 80px;
+	background-color: #eee;
+}
+input[type=text], input[type=password]{
+	width: 150px;
+	height: 30px;
+}
