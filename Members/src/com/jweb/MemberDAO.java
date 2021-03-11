@@ -92,11 +92,66 @@ public class MemberDAO {
 		return memberList;
 	}
 	
+	//회원 1명 출력하기 메서드
+	public Member getOndDB(String memId) {
+		connDB();
+		Member member = new Member();
+		
+		//sql 처리 : select 일 경우 executeQuery();
+		String sql="select * from t_member where memberId = ?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, memId);
+			rs = pstmt.executeQuery();
+			rs.next();
+			member.setMemberId(rs.getString("memberId"));
+			member.setPasswd(rs.getString("passwd"));
+			member.setName(rs.getString("name"));
+			member.setGender(rs.getString("gender"));
+			member.setJoinDate(rs.getDate("joinDate"));
+			
+			rs.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnect();
+		}
+		return member;
+	}
 	
+	//회원 삭제
+	public void deleteMember(String memId){
+		connDB();
+		String sql="delete from t_member where memberId = ?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, memId);
+			//실행 : insert, update, delete - executeUpdate()
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnect();
+		}
+	}
 	
-	
-	
-	
+	//
+	public void updateMember(Member member) {
+		connDB();
+		String sql="update t_member set passwd = ?, name = ?, gender = ? where memberId = ?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, member.getPasswd());
+			pstmt.setString(2, member.getName());
+			pstmt.setString(3, member.getGender());
+			pstmt.setString(4, member.getMemberId());
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnect();
+		}
+	}
 	
 	
 	

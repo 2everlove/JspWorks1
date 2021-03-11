@@ -6,11 +6,14 @@
 	margin: 0 auto;
 	text-align: center;
 }
+footer{
+	margin-left: 25%;	
+}
 .title{
-	height: 150px;
-	font-size: 1.5em;
+	height: 140px;
+	font-size: 1.4em;
 	background-color: #eee;
-	line-height: 6em;
+	line-height: 5.6em;
 	margin-bottom: 50px;
 }
 nav{
@@ -56,7 +59,7 @@ th, td{
 	height: 80px;
 	background-color: #eee;
 }
-input[type=text], input[type=password]{
-	width: 150px;
+input[type="text"], input[type="password"]{
+	width: 200px;
 	height: 30px;
 }
