@@ -1,4 +1,4 @@
-package com.jweb;
+package com.jweb.member;
 
 import java.io.Serializable;
 import java.util.Date;

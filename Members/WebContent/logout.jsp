@@ -6,11 +6,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
+<title>Insert title here</title>
 <%
-	String memId = request.getParameter("memberId");
-	memDAO.deleteMember(memId);
-	response.sendRedirect("memberList.jsp");
+	out.println("<script>");
+	out.println("alert('["+(String)session.getAttribute("sessionId")+"]님 로그아웃 되었습니다.')");
+	out.println("location.href='main.jsp'");
+	out.println("</script>");
+	session.invalidate(); //세션해제
 %>
 </head>
 <body>

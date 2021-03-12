@@ -28,6 +28,8 @@
 				String ct = "";
 				if(second<10)
 					ct = hour + ":" + minute + ":0" + second;
+				else if(minute<10)
+					ct = hour + ":0" + minute + ":" + second;
 				else
 					ct = hour + ":" + minute + ":" + second;
 				out.println("현재 접속 시각 : "+ct);

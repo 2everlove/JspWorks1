@@ -6,12 +6,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<jsp:useBean id="member" class="com.jweb.Member" />
+<jsp:useBean id="member" class="com.jweb.member.Member" />
 <jsp:setProperty property="memberId" name="member"/>
 <jsp:setProperty property="passwd" name="member"/>
 <jsp:setProperty property="name" name="member"/>
 <jsp:setProperty property="gender" name="member"/>
-<jsp:useBean id="memDAO" class="com.jweb.MemberDAO" scope="application"/>
+<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
 <%
 	memDAO.updateMember(member);
 	/* response.sendRedirect("memberView.jsp?memberId="+member.getMemberId()); */

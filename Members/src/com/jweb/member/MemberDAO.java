@@ -1,4 +1,4 @@
-package com.jweb;
+package com.jweb.member;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -23,12 +23,11 @@ public class MemberDAO {
 			Class.forName(driverClass);
 			conn = DriverManager.getConnection(url, username, password);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 	
-	//DB 연결 종료
+	//DB 연결 종료 - pstmt, conn 종료
 	private void disconnect() {
 		if(pstmt != null) {
 			try {
@@ -45,6 +44,31 @@ public class MemberDAO {
 			}
 		}
 	}
+	
+	//DB 연결 종료 - rs, pstmt, conn 종료
+		private void disconnectRS() {
+			if(rs != null) {
+				try {
+					rs.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+			if(pstmt != null) {
+				try {
+					pstmt.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+			if(conn != null) {
+				try {
+					conn.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
 	
 	//회원 추가
 	public void addMember(Member member) {
@@ -83,11 +107,10 @@ public class MemberDAO {
 				
 				memberList.add(member);
 			}
-			rs.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			disconnect();
+			disconnectRS();
 		}
 		return memberList;
 	}
@@ -110,11 +133,10 @@ public class MemberDAO {
 			member.setGender(rs.getString("gender"));
 			member.setJoinDate(rs.getDate("joinDate"));
 			
-			rs.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			disconnect();
+			disconnectRS();
 		}
 		return member;
 	}
@@ -135,7 +157,7 @@ public class MemberDAO {
 		}
 	}
 	
-	//
+	//회원 정보 수정
 	public void updateMember(Member member) {
 		connDB();
 		String sql="update t_member set passwd = ?, name = ?, gender = ? where memberId = ?";
@@ -153,6 +175,32 @@ public class MemberDAO {
 		}
 	}
 	
+	//회원 로그인 체크 = 아이디 일치:1, 비밀번호 일치:1, 아이디 불일치:0, 비밀번호 불일치:-1, 데이터베이스 오류:-2
+	public int login(String memberId, String passwd) {
+		connDB();
+		String sql = "SELECT memberId, passwd FROM t_member WHERE memberId = ?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, memberId);
+			rs = pstmt.executeQuery();
+			if(rs.next()) { //아이디가 일치
+				String dbPw = rs.getString("passwd");
+				if(dbPw.equals(passwd)){ //매개로 전달받은 비밀번호 변수 비교
+					return 1; //비밀번호 일치
+				} else {
+					return -1;//비밀번호 불일치
+				}
+			} else {
+				return 0; //아이디 불일치
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnectRS();
+		}
+		return -2; //데이터베이스 오류
+	}
 	
 	
-}
+	
+}//class

@@ -55,6 +55,24 @@ th, td{
 	height: 30px;
 	padding: 10px 10px;
 }
+.table2, th, td{
+	text-align: center;
+	border: 1px solid #eee;
+	border-collapse: collapse;
+}
+.table2{
+	width: 700px;
+	margin: 0 auto;
+}
+.table2 .write__title{
+	width: 645px;
+	height: 40px;
+	
+}
+.table2 textarea{
+	width: 95%;
+	height: 300px
+}
 #memberForm__table-FstColumn{
 	height: 80px;
 	background-color: #eee;
@@ -62,4 +80,7 @@ th, td{
 input[type="text"], input[type="password"]{
 	width: 200px;
 	height: 30px;
+}
+#table__board .table__board-tr:hover {
+	background-color: #eee;
 }

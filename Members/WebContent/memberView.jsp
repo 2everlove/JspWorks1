@@ -8,11 +8,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <jsp:include page="menu.jsp"/>
-<jsp:useBean id="memDAO" class="com.jweb.MemberDAO" scope="application"/>
-<jsp:useBean id="member" class="com.jweb.Member"/>
+<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
+<jsp:useBean id="member" class="com.jweb.member.Member"/>
 <%
 	String memberId = request.getParameter("memberId");
 	member = memDAO.getOndDB(memberId);
+	String sessionId = null;
+	if(session.getAttribute("sessionId") != null){
+		sessionId = (String) session.getAttribute("sessionId");
+	}
+
 %>
 <title><%=member.getMemberId() %>님의 상세보기</title>
 <style type="text/css">
@@ -36,10 +41,10 @@
 				<th>비밀번호</th>
 				<td><input type="password" name="passwd" value="<%=member.getPasswd() %>" disabled></td>
 			</tr>
-			<tr>
+		<%-- 	<tr>
 				<th>비밀번호 확인</th>
 				<td><input type="password" name="passwd_confirm" value="<%=member.getPasswd() %>" disabled></td>
-			</tr>
+			</tr> --%>
 			<tr>
 				<th>이름</th>
 				<td><input type="text" name="name" value="<%=member.getName() %>" disabled></td>
@@ -62,9 +67,15 @@
 			</tr>
 			<tr>
 				<td colspan="2">
+			<%
+				if(sessionId.equals(member.getMemberId())){
+			%>
 				<a href="memberList.jsp"><input type="button" value="목록"></a>
-				<a href="memberDelete.jsp?memberId=<%=member.getMemberId()%>" onclick="return confirm('탈퇴하시겠습니까?')"><input type="button" value="탈퇴"></a>
 				<a href="memberUpdate.jsp?memberId=<%=member.getMemberId()%>"><input type="button" value="수정"></a>
+				<a href="memberDelete.jsp?memberId=<%=member.getMemberId()%>" onclick="return confirm('탈퇴하시겠습니까?')"><input type="button" value="탈퇴"></a>
+			<% } else { %>
+				<a href="memberList.jsp"><input type="button" value="목록"></a>
+			<% } %>
 				</td>
 			</tr>
 		</table>
