@@ -114,6 +114,7 @@ public class BoardDAO {
 		return boardList;
 	}//
 	
+	//게시판 목록 보기
 	public ArrayList<Board> getBoardList() {
 		connDB();
 		ArrayList<Board> boardList = new ArrayList<>();
@@ -139,7 +140,64 @@ public class BoardDAO {
 		
 		return boardList;
 	}//
+	
+	//게시판 상세보기
+	public Board getOneBoard(int bnum) {
+		connDB();
+		Board board = new Board();
+		String sql="select * from t_board where bnum = ?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, bnum);
+			//쿼리 실행
+			rs = pstmt.executeQuery();
+			rs.next(); //1명이 있음
+			board.setBnum(rs.getInt("bnum"));
+			board.setTitle(rs.getString("title"));
+			board.setContent(rs.getString("content"));
+			board.setRegDate(rs.getDate("regDate"));
+			board.setMemberId(rs.getString("memberId"));
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnectRS();;
+		}
+		return board;
+	}//
 		
-		
+	//게시글 삭제
+	public void deleteBoard(int bnum) {
+		connDB();
+		String sql="delete from t_board where bnum = ?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, bnum);
+			//쿼리 실행
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnect();
+		}
+	}//
+	
+	//게시글 정보 수정 - 수정 -> 가입한다고 생각(insert랑 비슷)
+	public void updateBoard(Board board) {
+		connDB();
+		String sql="update t_board set title = ?, content = ? where bnum = ?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, board.getTitle());
+			pstmt.setString(2, board.getContent());
+			pstmt.setInt(3, board.getBnum());
+			
+			//update, delete 일땐 executeUpdate();
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnect();
+		}		
+	}//
 		
 }//class 닫기

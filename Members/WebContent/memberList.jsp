@@ -10,7 +10,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome to our-site</title>
+<title>Member List</title>
 <link rel="stylesheet" href="resources/css/style.css">
 </head>
 <%
@@ -29,11 +29,11 @@
 		</div>
 		<table>
 			<tr>
-				<th>아이디</th>
-				<th>이름</th>
-				<th>성별</th>
-				<th>가입일</th>
-				<th>회원보기</th>
+				<th class="title__title">아이디</th>
+				<th class="title__title">이름</th>
+				<th class="title__title">성별</th>
+				<th class="title__title">가입일</th>
+				<th class="title__title">회원보기</th>
 			</tr>
 			<% 
 				/* for(Member member : memDAO.getListAll()){ */

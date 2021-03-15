@@ -21,7 +21,7 @@
 	}
 %>
 <link rel="stylesheet" href="resources/css/style.css">
-<script type="text/javascript" src="resources/js/check.js"></script>
+<script type="text/javascript" src="resources/js/checkBoard.js"></script>
 </head>
 <body>
 	<jsp:include page="menu.jsp"></jsp:include>
@@ -40,11 +40,13 @@
 				<tr>
 					<td colspan="2">
 						<input type="submit" value="글쓰기" onclick="checkBoard()" >
+						<a href="boardList.jsp"><input type="button" value="목록"></a>
 						<input type="reset" value="취소">
 					</td>
 				</tr>
 			</table>
 		</form>
 	</div>
+	<jsp:include page="footer.jsp"/>
 </body>
 </html>

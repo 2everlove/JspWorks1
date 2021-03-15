@@ -20,7 +20,8 @@
 		session.setAttribute("sessionId", memberId);
 		out.println("<script>");
 		out.println("alert('["+memberId+"]님 로그인 되었습니다.')");
-		out.println("location.href='memberList.jsp'");
+		out.println("location.href='memberResult.jsp?msg=2'");
+		/* response.sendRedirect("memberResult.jsp?msg=2"); */
 		out.println("</script>");
 		/* response.sendRedirect("memberList.jsp"); //목록페이지로 이동 */
 	} else if(result==0){

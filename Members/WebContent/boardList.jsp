@@ -1,4 +1,5 @@
 <%-- <%@page import="com.jweb.board.Board"%> --%>
+<!-- 작성자 클릭시 팝업 - 작성한 글 보기, 회원 정보 보기(같은 세션 아이디 일때) -->
 <%@page import="java.util.GregorianCalendar"%>
 <%@page import="java.util.Calendar"%>
 <%@page import="java.util.Date"%>
@@ -10,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome to our-site</title>
+<title>Board List</title>
 <link rel="stylesheet" href="resources/css/style.css">
 </head>
 <%
@@ -29,10 +30,10 @@
 		</div>
 		<table id="table__board">
 			<tr>
-				<th style="width: 60px">번호</th>
-				<th style="width: 300px">제목</th>
-				<th style="width: 110px">작성자</th>
-				<th style="width: 115px">등록일</th>
+				<th class="title__title" style="width: 60px">번호</th>
+				<th class="title__title" style="width: 300px">제목</th>
+				<th class="title__title" style="width: 110px">작성자</th>
+				<th class="title__title" style="width: 115px">등록일</th>
 			</tr>
 			<% 
 				 for(int i=0;i<boardDAO.getBoardList().size();i++){
@@ -42,7 +43,11 @@
 			<tr class="table__board-tr">
 				<td class="table__board-tr"><%=board.getBnum() %></td>
 				<td class="table__board-tr"><a href="boardView.jsp?bnum=<%=board.getBnum()%>" style="text-decoration: none; color: black;"><%=board.getTitle() %></a></td>
+				<% if(board.getMemberId().equals(sessionId)) { %>
+				<td class="table__board-tr" style="color: blue;"><a href="" style="text-decoration: none;"><%=board.getMemberId()%></a></td>
+				<% } else { %>
 				<td class="table__board-tr"><%=board.getMemberId()%></td>
+				<% } %>
 				<td class="table__board-tr"><%=board.getRegDate() %></td>
 			</tr>
 			<% } %>
@@ -51,5 +56,6 @@
 			</tr>
 		</table>
 	</div>
+	<jsp:include page="footer.jsp"/>
 </body>
 </html>

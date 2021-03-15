@@ -8,7 +8,7 @@ function press(){
 	if(window.event.keyCode == 13){ //javascript에서는 13이 enter키를 의미함 
 		checkMember();
 	} 
-};
+};//
 
 function checkMember() {
     const form = document.regForm;
@@ -68,4 +68,5 @@ function checkMember() {
 	}
 	if(confirm("입력한 정보가 맞으시면 확인을 눌러주세요.\n아이디 : "+id+"\n이름 : "+name+"\n성별 : "+gender))
 		form.submit();		    
-};
+};//
+
