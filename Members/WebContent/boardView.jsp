@@ -20,6 +20,10 @@
 		bnum = Integer.parseInt(request.getParameter("bnum"));
 		} 
 		Board board = boardDAO.getOneBoard(bnum); */
+	
+	//조회수 1증가
+	boardDAO.updateHit(bnum);
+		
 	board = boardDAO.getOneBoard(bnum);
 	member = memDAO.getOndDB(board.getMemberId());
 	
@@ -39,12 +43,21 @@
 		<table class="table2">
 			<tr>
 				<th style="width: 80px"><%=board.getBnum() %></th>
-				<td colspan="3" style="text-align: left;"><%=board.getTitle() %></td>
+				<td colspan="2" style="text-align: left;border-right:1px solid white;"><%=board.getTitle() %></td>
+				<th style="border-left:1px solid white; width: 120px; text-align: right; padding-right: 25px;"><span style="font-size: 0.8em;">조회수 <%=board.getHit() %></span></th>
 			</tr>
 			<tr>
 				<th>글쓴이</th>
-				<td style="border-right:1px solid white; text-align: left;"><%=board.getMemberId()+"("+member.getName()+")" %></td>
-				<td style="text-align: right; padding-right: 45px;"><%=board.getRegDate().toLocaleString() %></td>
+				<td style="border-right:1px solid white; text-align: left; width: 360px">
+				<div class="dropdown"><button class="dropbtn"><%=board.getMemberId()+"("+member.getName()+")" %></button>
+					<div class="dropdown-content" style="left:0; border: 1px solid black;">
+						<a href="memberView.jsp?memberId=<%=board.getMemberId() %>"><%=board.getMemberId()%>님의<br>정보 보기</a>
+						<a href="boardListOne.jsp?memberId=<%=board.getMemberId() %>"><%=board.getMemberId()%>님의<br>작성글 보기</a>
+					</div>
+				</div>
+				
+				</td>
+				<td colspan="2" style="text-align: right; padding-right: 25px;"><%=board.getRegDate().toLocaleString() %></td>
 			</tr>
 			<tr>
 				<th>글내용</th>

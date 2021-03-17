@@ -11,8 +11,11 @@
 	margin: 0 auto;
 	text-align: center;
 }
-footer{
-	margin-left: 25%;	
+footer{margin-left: 25%;}
+.msg{
+	height: 140px;
+	background: pink;
+	line-height: 60px;	
 }
 .title{
 	height: 140px;
@@ -26,9 +29,7 @@ nav{
 	margin-top: 30px;
 	margin-right: 20px;
 }
-nav ul{
-	list-style: none;
-}
+nav ul{list-style: none;}
 nav ul li{
 	display: inline;
 	margin-left: 20px;
@@ -36,9 +37,7 @@ nav ul li{
 	border-top: 2px solid black;
 	line-height: 10px;
 }
-nav ul li:hover{
-	background-color: #eee;
-}
+nav ul li:hover{background-color: #eee;}
 nav ul li a{
 	text-decoration: none;
 	color: black;
@@ -87,6 +86,7 @@ th, td{
 	height: 300px;
 	border: 0px;
 }
+#table__board{width: 700px}
 #memberForm__table-FstColumn{
 	height: 80px;
 	background-color: #eee;
@@ -95,11 +95,41 @@ input[type="text"], input[type="password"]{
 	width: 200px;
 	height: 30px;
 }
-#table__board .table__board-tr:hover {
-	background-color: #eee;
-}
-.title__title{
-	background-color: #c8d6e5;
+#table__board .table__board-tr:hover {background-color: #eee;}
+.title__title{background-color: #c8d6e5;}
+#table1 .thead{background-color: #c8d6e5}
+#table1{width: 600px;}
+/* #table3 td:nth-child(2n-1){width: 30px} */
+.dropbtn {
+	font-size: 1em;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
 }
 
-/* #table3 td:nth-child(2n-1){width: 30px} */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	font-size: 0.8em;
+	display: none;
+	position: absolute;
+	right: 0;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #c8d6e5;}

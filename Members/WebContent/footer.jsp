@@ -10,7 +10,7 @@
 <body>
 	<footer>
 		<div id="footer__content">
-			<p>&copy; World Job Friends : JMP Korea </p>
+			<p style="margin-bottom: 100px">&copy; World Job Friends : JMP Korea </p>
 		</div>
 	</footer>
 </body>

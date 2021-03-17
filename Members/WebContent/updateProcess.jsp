@@ -14,11 +14,28 @@
 <jsp:setProperty property="gender" name="member"/>
 <jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
 <%
-	// dao - update();
-	memDAO.updateMember(member);
-	/* response.sendRedirect("memberView.jsp?memberId="+member.getMemberId()); */
-	out.println("<script>alert('회원정보가 수정되었습니다.')");
-	out.println("location.href='memberResult.jsp?msg=0'</script>");
+	String sessionId = null;
+	if(session.getAttribute("sessionId") != null){
+		sessionId = (String) session.getAttribute("sessionId");
+		if(member.getMemberId().equals(sessionId)){
+			// dao - update();
+			memDAO.updateMember(member);
+			/* response.sendRedirect("memberView.jsp?memberId="+member.getMemberId()); */
+			out.println("<script>alert('회원정보가 수정되었습니다.')");
+			out.println("location.href='memberResult.jsp?msg=0'</script>");
+		} else {
+			out.println("<script>");
+			out.println("alert('권한이 없습니다.')");
+			out.println("history.back()");
+			out.println("</script>");
+		}
+	} else {
+		out.println("<script>");
+		out.println("alert('로그인을 해주세요.')");
+		out.println("location.href='loginForm.jsp'");
+		out.println("</script>");
+	}
+	
 	
 	/* RequestDispatcher 클래스 가장 많이 사용 */
 %>

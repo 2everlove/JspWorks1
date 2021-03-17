@@ -33,8 +33,10 @@
 </style>
 </head>
 <body>
-	<div id="container">
-		<form action="member01_process_el.jsp" method="post">
+	<div id="container" style="margin: 0 auto;">
+		<h2>회원 가입</h2>
+		<hr>
+		<form action="member02_process_el.jsp" method="post">
 			<ul>
 				<li>
 					<label for="id">아이디</label>
@@ -42,11 +44,11 @@
 				</li>
 				<li>
 					<label for="passwd">비밀번호</label>
-					<input type="password" id="psw" name="passwd">
+					<input type="password" id="psw" name="pwd">
 				</li>
 				<li>
 					<label for="username">이름</label>
-					<input type="text" id="psw" name="username">
+					<input type="text" id="psw" name="name">
 				</li>
 			</ul>
 			<button type="submit">가입</button>

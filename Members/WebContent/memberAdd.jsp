@@ -18,6 +18,8 @@
 <jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
 <%
 	memDAO.addMember(member);
+	String memberId =request.getParameter("memberId");
+	session.setAttribute("sessionId", memberId);
 	response.sendRedirect("memberResult.jsp?msg=1");
 %>
 <body>

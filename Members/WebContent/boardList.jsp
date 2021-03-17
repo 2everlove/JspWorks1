@@ -34,6 +34,7 @@
 				<th class="title__title" style="width: 300px">제목</th>
 				<th class="title__title" style="width: 110px">작성자</th>
 				<th class="title__title" style="width: 115px">등록일</th>
+				<th class="title__title" style="width: 120px">조회수</th>
 			</tr>
 			<% 
 				 for(int i=0;i<boardDAO.getBoardList().size();i++){
@@ -43,16 +44,20 @@
 			<tr class="table__board-tr">
 				<td class="table__board-tr"><%=board.getBnum() %></td>
 				<td class="table__board-tr"><a href="boardView.jsp?bnum=<%=board.getBnum()%>" style="text-decoration: none; color: black;"><%=board.getTitle() %></a></td>
-				<% if(board.getMemberId().equals(sessionId)) { %>
-				<td class="table__board-tr" style="color: blue;"><a href="" style="text-decoration: none;"><%=board.getMemberId()%></a></td>
-				<% } else { %>
-				<td class="table__board-tr"><%=board.getMemberId()%></td>
-				<% } %>
+				<td class="table__board-tr">
+					<div class="dropdown"><button class="dropbtn"><%=board.getMemberId()%></button>
+						<div class="dropdown-content" style="left:0; border: 1px solid black;">
+							<a href="memberView.jsp?memberId=<%=board.getMemberId() %>"><%=board.getMemberId()%>님의<br>정보 보기</a>
+							<a href="boardListOne.jsp?memberId=<%=board.getMemberId() %>"><%=board.getMemberId()%>님의<br>작성글 보기</a>
+						</div>
+					</div>
+				</td>
 				<td class="table__board-tr"><%=board.getRegDate() %></td>
+				<td class="table__board-tr"><%=board.getHit() %></td>
 			</tr>
 			<% } %>
 			<tr>
-				<td colspan="4"><a href="boardWriteForm.jsp"><input type="button" value="글쓰기"></a></td>
+				<td colspan="5"><a href="boardWriteForm.jsp"><input type="button" value="글쓰기"></a></td>
 			</tr>
 		</table>
 	</div>

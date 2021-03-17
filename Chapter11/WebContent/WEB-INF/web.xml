@@ -9,4 +9,13 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+	<servlet>
+		<servlet-name>helloController</servlet-name> <!--그냥 별칭-->
+		<servlet-class>com.controller.HelloController</servlet-class> <!--Java파일 위치-->
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>helloController</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	
 </web-app>

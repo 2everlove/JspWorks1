@@ -23,6 +23,7 @@
 	
 	//msg 받기
 	String msg = request.getParameter("msg");
+	/* int msg = Integer.parseInt(request.getParameter("msg")); */
 %>
 </head>
 <body>
@@ -34,18 +35,16 @@
 		<div class="msg">
 			<!-- 자바코드 -->
 			<% if(msg!=null){
-				 if(msg.equals("0")) { %>
-					<h1>[<%=name %>]님의 정보가 수정되었습니다.</h1>
-					<a href="memberList.jsp">회원목록</a>
-			<%	 } else if(msg.equals("1")) { %>
-					<h1>회원 가입을 축하합니다.</h1>
-					<a href="memberList.jsp">회원목록</a>
-			<% 	 } else if(msg.equals("2")) { %>
-					<h1><%=name %>님 환영합니다.</h1>
-					<a href="memberList.jsp">회원목록</a>
-			<% 	 }} else { %>
-					<h1>회원 정보가 삭제되었습니다.</h1>
+				 if(msg.equals("0")) { 
+					out.println("<h1>["+name+"]님의 정보가 수정되었습니다.</h1><a href='memberList.jsp' autofocus style='text-decoration: none;'>[회원목록]</a>");
+				 } else if(msg.equals("1")) { 
+					 out.println("<h1>회원 가입을 축하합니다.</h1><a href='memberList.jsp' autofocus style='text-decoration: none;'>[회원목록]</a>");
+				} else if(msg.equals("2")) { 
+					out.println("<h1>"+name+"님 환영합니다.</h1><a href='memberList.jsp' autofocus style='text-decoration: none;'>[회원목록]</a>");
+				 }} else { %>
+					<h1 class="msg">삭제되었습니다.</h1>
 			<%   } %>
+			
 		</div>
 	</div>
 	<jsp:include page="footer.jsp"/>

@@ -11,18 +11,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>회원</title>
 <link rel="stylesheet" href="resources/css/style.css">
-<script type="text/javascript">
-	const navbar = document.querySelector('#navbar');
-	const navbarHeight = navbar.getBoundingClientRect().height;
-	document.addEventListener('scroll', () => {
-	    if(window.scrollY>navbarHeight){
-	        navbar.classList.add('navbar--dark');
-	    } else{
-	        navbar.classList.remove('navbar--dark');
-	    }
-	    // navbarMenu.classList.remove("open");
-});
-</script>
 </head>
 <jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
 

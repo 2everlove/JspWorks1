@@ -10,12 +10,21 @@
 <jsp:include page="menu.jsp"/>
 <jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
 <jsp:useBean id="member" class="com.jweb.member.Member"/>
+<jsp:useBean id="board" class="com.jweb.board.Board"/>
+<jsp:setProperty property="bnum" name="board"/>
+<jsp:setProperty property="memberId" name="board"/>
+<jsp:useBean id="boardDAO" class="com.jweb.board.BoardDAO" scope="application"/>
 <%
 	String memberId = request.getParameter("memberId");
 	member = memDAO.getOndDB(memberId);
 	String sessionId = null;
 	if(session.getAttribute("sessionId") != null){
 		sessionId = (String) session.getAttribute("sessionId");
+	} else {
+		out.println("<script>");
+		out.println("alert('로그인을 해주세요.')");
+		out.println("location.href='loginForm.jsp'");
+		out.println("</script>");
 	}
 
 %>
@@ -66,9 +75,13 @@
 				<td><input type="text" name="joinDate" value="<%=member.getJoinDate() %>" disabled></td>
 			</tr>
 			<tr>
+				<th>작성글 수</th>
+				<td><%=boardDAO.getOneBoardList(memberId).size() %> <a href="boardListOne.jsp?memberId=<%=board.getMemberId() %>" style="text-decoration: none;">[자세히 보기]</a></td>
+			</tr>
+			<tr>
 				<td colspan="2">
 			<%
-				if(sessionId.equals(member.getMemberId())){
+				if(member.getMemberId().equals(sessionId)){
 			%>
 				<a href="memberList.jsp"><input type="button" value="목록"></a>
 				<a href="memberUpdate.jsp?memberId=<%=member.getMemberId()%>"><input type="button" value="수정"></a>

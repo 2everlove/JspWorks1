@@ -18,7 +18,7 @@
 			<h1>Welcome to World Job Friends</h1>
 		</div>
 		<div>
-			<img alt="world job Friends" src="resources/images/worldjobfriends.png" width="200" height="100">
+			<img alt="world job Friends" src="resources/images/worldjobfriends.png" width="600" height="300">
 			<p>
 			<% 
 				Calendar date = new GregorianCalendar();

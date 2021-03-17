@@ -41,6 +41,7 @@ public class MVCServlet extends HttpServlet {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("mvc02.jsp");
 		dispatcher.forward(request, response);
 		//					저장해서 응답했다.
-	}
+		
+	}//method
 
-}
+}//class

@@ -17,6 +17,11 @@
 	String sessionId = null;
 	if(session.getAttribute("sessionId") != null){
 		sessionId = (String) session.getAttribute("sessionId");
+	} else {
+		out.println("<script>");
+		out.println("alert('로그인을 해주세요.')");
+		out.println("location.href='loginForm.jsp'");
+		out.println("</script>");
 	}
 %>
 <body>
@@ -27,7 +32,7 @@
 		<div class="title">
 			<h1>회원목록</h1>
 		</div>
-		<table>
+		<table id="table1">
 			<tr>
 				<th class="title__title">아이디</th>
 				<th class="title__title">이름</th>
@@ -39,9 +44,9 @@
 				/* for(Member member : memDAO.getListAll()){ */
 				for(int i=0;i<memDAO.getListAll().size();i++){
 					member = memDAO.getListAll().get(i);
-					if(sessionId.equals(member.getMemberId())){
+					if(member.getMemberId().equals(sessionId)){
 			%>
-			<tr>
+			<tr class="thead">
 				<td style="background-color: #eee"><%=member.getMemberId() %></td>
 				<td style="background-color: #eee"><%=member.getName() %></td>
 				<td style="background-color: #eee"><%=member.getGender() %></td>
