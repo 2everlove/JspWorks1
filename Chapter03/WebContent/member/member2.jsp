@@ -9,7 +9,7 @@
 </head>
 <body>
 	<h2>다른 방법 (major)</h2>
-	<jsp:useBean id="member" class="com.beans.MemberBean" scope="request" />
+	<jsp:useBean id="member" class="com.bean.MemberBean" scope="request" />
 	<%-- <jsp:setProperty property="id" name="member"/>
 	<jsp:setProperty property="name" name="member"/> --%>
 	<!-- 변수 전체가 아래처럼 다 나오면 생략가능 -->
