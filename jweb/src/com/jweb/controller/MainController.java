@@ -1,6 +1,7 @@
 package com.jweb.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.jweb.board.Board;
 import com.jweb.board.BoardDAO;
 import com.jweb.member.Member;
 import com.jweb.member.MemberDAO;
@@ -21,7 +23,7 @@ public class MainController extends HttpServlet{
 	BoardDAO boardDAO;
 	
 	@Override
-	public void init() throws ServletException { //초기화
+	public void init() throws ServletException { //초기화 - init에 instance를 생성안하면 필요할때마다 계속 생성해야함 -> init에 공통 모듈 넣자
 		memberDAO = new MemberDAO(); //memberDAO 객체 생성
 		boardDAO = new BoardDAO(); //boardDAO 객체 생성
 	}
@@ -34,13 +36,15 @@ public class MainController extends HttpServlet{
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//한글 인코딩
-		response.setCharacterEncoding("utf-8");
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset=utf-8");
 		
 		//클라이언트의 요청 path 정보 추출
 		String uri = request.getRequestURI();
+		System.out.println("URI : "+uri);
 		String command = uri.substring(uri.lastIndexOf("/")); // path
+		System.out.println("uri.lastIndexOf('/') : "+uri.lastIndexOf("/"));
+		System.out.println("Path : "+command);
 		/* request.getContextPath().lastIndexOf("/"); */
 		String nextPage = null;
 		
@@ -63,6 +67,9 @@ public class MainController extends HttpServlet{
 			//dao - inset
 			memberDAO.addMember(member);
 			
+			HttpSession session = request.getSession();
+			session.setAttribute("sessionId", memberId);
+			
 			//model인 member 저장
 			request.setAttribute("member", member);
 			request.setAttribute("msg", "join");
@@ -75,22 +82,28 @@ public class MainController extends HttpServlet{
 			//폼에 입력된 자료 수집
 			String id = request.getParameter("memberId");
 			String pwd = request.getParameter("passwd");
-			String name = request.getParameter("name");
-			String gender = request.getParameter("gender");
+			/*
+			 * String name = request.getParameter("name"); String gender =
+			 * request.getParameter("gender");
+			 */
 			
 			//dao - loginCheck()호출
 			memberDAO.login(id, pwd);
 			int loginResult = memberDAO.login(id, pwd);
+			String name = memberDAO.getLoginNameById(id);
 			
 			//아이디 비번 일치하면 세션 발급
 			if(loginResult==1) {
 				HttpSession session = request.getSession();
 				session.setAttribute("sessionId", id);
+				session.setAttribute("name", name);
+				
 				request.setAttribute("msg", "login");
 			}
-			
 			//model and view
 			request.setAttribute("loginResult", loginResult);
+			/* request.setAttribute("name", name); */
+			/* nextPage = "/menu.jsp"; */
 			nextPage = "/memberResult.jsp";
 		} else if (command.equals("/logout.do")) {
 			//세션해제
@@ -113,6 +126,102 @@ public class MainController extends HttpServlet{
 			
 			
 			nextPage = "/memberView.jsp";
+		} else if(command.equals("/memberUpdate.do")) {
+			//폼의 데이터 수집
+			String memberId = request.getParameter("memberId");
+			String pwd = request.getParameter("passwd");
+			String name = request.getParameter("name"); 
+			String gender =	request.getParameter("gender");
+			
+			//member 객체 생성 - set()
+			Member member = new Member();
+			member.setMemberId(memberId);
+			member.setPasswd(pwd);
+			member.setName(name);
+			member.setGender(gender);
+			
+			//dao - updateMember()
+			memberDAO.updateMember(member);
+			
+			//model and view
+			request.setAttribute("member", member);
+			request.setAttribute("msg", "update");
+			nextPage = "/memberResult.jsp";
+		} else if(command.equals("/memberDelete.do")) {
+			//쿼리 문자열 받기
+			String memberId = request.getParameter("memberId");
+			
+			//dao - deleteMember() 호출
+			memberDAO.deleteMember(memberId);
+			
+			//삭제 후 로그아웃
+			HttpSession session = request.getSession();
+			session.invalidate();
+			
+			//model and view
+			request.setAttribute("msg", "delete");
+			
+			nextPage = "/memberResult.jsp"; //이걸 안하면 request쪽에 null이 뜸 (doGet, dispatcher.foward())
+		} else if(command.equals("/boardList.do")) {
+			//dao - getListAll() 호출
+			ArrayList<Board> boardList = boardDAO.getBoardList();
+			
+			//model and view
+			request.setAttribute("boardList", boardList);
+			nextPage = "/boardList.jsp";
+		} else if(command.equals("/boardWriteForm.do")) {
+			nextPage = "/boardWriteForm.jsp";
+		} else if(command.equals("/boardWriteAdd.do")) {
+			//폼 입력 자료 수집
+			String title = request.getParameter("title");
+			String content = request.getParameter("content");
+
+			//세션 아이디 발급
+			HttpSession session = request.getSession();
+			String sessionId = (String) session.getAttribute("sessionId");
+			
+			//Board 객체에서 set
+			Board board = new Board();
+			board.setTitle(title);
+			board.setContent(content);
+			board.setMemberId(sessionId);
+			
+			boardDAO.insertBoard(board);
+			
+			request.setAttribute("board", board);
+			nextPage = "/boardList.do";
+		} else if(command.equals("/boardDelete.do")) {
+			int bnum = Integer.parseInt(request.getParameter("bnum"));
+			boardDAO.deleteBoard(bnum);
+			nextPage = "/boardList.do";
+		} else if(command.equals("/boardView.do")) {
+			// 쿼리 받기 - bnum
+			int bnum = Integer.parseInt(request.getParameter("bnum"));
+			
+			//dao - getOneDb()를 Board 객체에 넣기
+			boardDAO.updateHit(bnum);
+			Board board = boardDAO.getOneBoard(bnum);
+			Member member = memberDAO.getOndDB(board.getMemberId());
+			
+			//view and model
+			request.setAttribute("board", board);
+			request.setAttribute("member", member);
+			nextPage = "/boardView.jsp";
+		} else if(command.equals("/boardUpdate.do")) {
+			String title = request.getParameter("title");
+			String content = request.getParameter("content");
+			
+			//세션 아이디 발급
+			HttpSession session = request.getSession();
+			String sessionId = (String) session.getAttribute("sessionId");
+			
+			Board board = new Board();
+			board.setTitle(title);
+			board.setContent(content);
+			board.setMemberId(sessionId);
+			boardDAO.updateBoard(board);
+			
+			nextPage = "/boardView.do";
 		}
 		
 		//forwading -> view로 보내기
@@ -121,4 +230,5 @@ public class MainController extends HttpServlet{
 		
 		
 	}//doPost()
+	
 }//class

@@ -160,7 +160,7 @@ public class MemberDAO {
 	//회원 정보 수정
 	public void updateMember(Member member) {
 		connDB();
-		String sql="update t_member set passwd = ?, name = ?, gender = ? where memberId = ?";
+		String sql="UPDATE t_member SET passwd = ?, name = ?, gender = ? WHERE memberId = ?";
 		try {
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, member.getPasswd());
@@ -204,7 +204,7 @@ public class MemberDAO {
 	//인증된 memberId의 이름 가져오는 메서드
 		public String getLoginNameById(String memberId) {
 			connDB();
-			String sql="select * from t_member where memberId = ?";
+			String sql="SELECT * FROM t_member WHERE memberId = ?";
 			String name = null;
 			try {
 				pstmt = conn.prepareStatement(sql);

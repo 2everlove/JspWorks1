@@ -54,7 +54,12 @@
 				 for(int i=0;i<boardDAO.getOneBoardList(memberId).size();i++){
 					board = boardDAO.getOneBoardList(memberId).get(i);
 				/* for(Board board : boardDAO.getAllList()){ */
+					if(boardDAO.getOneBoardList(memberId).size()==0){
 			%>
+			<tr class="table__board-tr">
+				<td class="table__board-tr" colspan="5">아직 작성하신 게시물이 없습니다.</td>
+			</tr>
+			<% } else { %>
 			<tr class="table__board-tr">
 				<td class="table__board-tr"><%=board.getBnum() %></td>
 				<td class="table__board-tr"><a href="boardView.jsp?bnum=<%=board.getBnum()%>" style="text-decoration: none; color: black;"><%=board.getTitle() %></a></td>
@@ -67,7 +72,7 @@
 				<td class="table__board-tr"><%=board.getRegDate() %></td>
 				<td class="table__board-tr"><%=board.getHit() %></td>
 			</tr>
-			<% } %>
+			<% }} %>
 			<tr>
 				<td colspan="5">
 				<a href="boardWriteForm.jsp"><input type="button" value="글쓰기"></a>	<a href="boardList.jsp"><input type="button" value="목록"></a>

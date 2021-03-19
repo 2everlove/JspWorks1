@@ -59,7 +59,13 @@
 					<h1>회원 가입을 축하합니다.</h1>
 				</c:when>
 				<c:when test="${msg eq 'login'}">
-					<h1>${sessionId}님 환영합니다.</h1>
+					<h1>${sessionId} (<span style="color: blue;">${name}</span>)님 환영합니다.</h1>
+				</c:when>
+				<c:when test="${msg eq 'delete'}">
+					<h1>회원정보가 삭제되었습니다.</h1>
+				</c:when>
+				<c:when test="${msg eq 'update'}">
+					<h1>${sessionId}님의 정보가 수정되었습니다.</h1>
 				</c:when>
 			</c:choose>
 			

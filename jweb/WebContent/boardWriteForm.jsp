@@ -3,33 +3,29 @@
 <%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>글쓰기 양식</title>
-<%
-	String sessionId = null;
-	if(session.getAttribute("sessionId") != null){
-		sessionId = (String) session.getAttribute("sessionId");
-	} else {
-		out.println("<script>");
-		out.println("alert('로그인을 해주세요.')");
-		out.println("location.href='loginForm.jsp'");
-		out.println("</script>");
-	}
-%>
 <link rel="stylesheet" href="resources/css/style.css">
 <script type="text/javascript" src="resources/js/checkBoard.js"></script>
 </head>
 <body>
-	<jsp:include page="menu.jsp"></jsp:include>
+	<c:if test="${empty sessionId}">
+		<script type="text/javascript">
+			alert('로그인을 해주세요.');
+			location.href = "loginForm.do";
+		</script>
+	</c:if>
+	<jsp:include page="menu.jsp"/>
 	<div id="container">
 		<div class="title">
 			<h1>글쓰기</h1>
 		</div>
-		<form name ="writeForm" action="boardWriteProcess.jsp" method="post">
+		<form name ="writeForm" action="boardWriteAdd.do" method="post">
 			<table class="table2">
 				<tr>
 					<td><input type="text" class="write__title" name="title" placeholder="글제목" required autofocus></td>
