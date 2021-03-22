@@ -191,15 +191,22 @@ public class MainController extends HttpServlet{
 			request.setAttribute("board", board);
 			nextPage = "/boardList.do";
 		} else if(command.equals("/boardDelete.do")) {
+			//bnum 받기
 			int bnum = Integer.parseInt(request.getParameter("bnum"));
+			
+			//dao - deleteBoard() 호출
 			boardDAO.deleteBoard(bnum);
+			
+			//model and view
 			nextPage = "/boardList.do";
 		} else if(command.equals("/boardView.do")) {
 			// 쿼리 받기 - bnum
 			int bnum = Integer.parseInt(request.getParameter("bnum"));
 			
-			//dao - getOneDb()를 Board 객체에 넣기
+			//dao - 조회수 호출
 			boardDAO.updateHit(bnum);
+			
+			//dao - getOneDb()를 Board 객체에 넣기
 			Board board = boardDAO.getOneBoard(bnum);
 			Member member = memberDAO.getOndDB(board.getMemberId());
 			
@@ -208,20 +215,35 @@ public class MainController extends HttpServlet{
 			request.setAttribute("member", member);
 			nextPage = "/boardView.jsp";
 		} else if(command.equals("/boardUpdate.do")) {
+			//폼의 입력자료 수집
+			int bnum = Integer.parseInt(request.getParameter("bnum"));
 			String title = request.getParameter("title");
 			String content = request.getParameter("content");
 			
-			//세션 아이디 발급
-			HttpSession session = request.getSession();
-			String sessionId = (String) session.getAttribute("sessionId");
-			
+			//board 객체 생성
 			Board board = new Board();
 			board.setTitle(title);
 			board.setContent(content);
-			board.setMemberId(sessionId);
+			board.setBnum(bnum);
+			
+			
+			//dao - update
 			boardDAO.updateBoard(board);
 			
-			nextPage = "/boardView.do";
+			
+			//view and model
+			request.setAttribute("board", board);
+			request.setAttribute("alert", "update");
+			nextPage = "/boardList.do";
+		} else if(command.equals("/boardListOne.do")) {
+			String memberId = request.getParameter("memberId");
+			
+			//dao - getListAll() 호출
+			ArrayList<Board> boardList = boardDAO.getOneBoardList(memberId);
+			
+			//model and view
+			request.setAttribute("boardListOne", boardList);
+			nextPage = "/boardListOne.jsp";
 		}
 		
 		//forwading -> view로 보내기

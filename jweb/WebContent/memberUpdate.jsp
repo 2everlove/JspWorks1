@@ -11,7 +11,6 @@
 <jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
 <jsp:useBean id="member" class="com.jweb.member.Member"/>
 <%
-
 	String memberId = request.getParameter("memberId");
 	member = memDAO.getOndDB(memberId);
 	String sessionId = null;

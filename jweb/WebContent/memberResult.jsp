@@ -67,6 +67,9 @@
 				<c:when test="${msg eq 'update'}">
 					<h1>${sessionId}님의 정보가 수정되었습니다.</h1>
 				</c:when>
+				<c:when test="${msg eq 'update'}">
+					<h1>${sessionId}님의 정보가 수정되었습니다.</h1>
+				</c:when>
 			</c:choose>
 			
 		</div>

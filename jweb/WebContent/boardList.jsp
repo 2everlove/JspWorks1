@@ -4,6 +4,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -13,6 +14,12 @@
 <link rel="stylesheet" href="resources/css/style.css">
 </head>
 <body>
+	<c:if test="${alert=='update'}">
+		<script type="text/javascript">
+			alert("게시물이 수정되었습니다.");
+			location.href="boardList.do"
+		</script>
+	</c:if>
 	<jsp:include page="menu.jsp"/>
 	<div id="container">
 		<div class="title">
@@ -33,13 +40,13 @@
 					<td class="table__board-tr">
 						<div class="dropdown"><button class="dropbtn">${board.memberId}</button>
 							<div class="dropdown-content" style="left:0; border: 1px solid black;">
-								<a href="memberView.jsp?memberId=${board.memberId}">${board.memberId}님의<br>정보 보기</a>
-								<a href="boardListOne.jsp?memberId=${board.memberId}">${board.memberId}님의<br>작성글 보기</a>
+								<a href="memberView.do?memberId=${board.memberId}">${board.memberId}님의<br>정보 보기</a>
+								<a href="boardListOne.do?memberId=${board.memberId}">${board.memberId}님의<br>작성글 보기</a>
 							</div>
 						</div>
 					</td>
-					<td class="table__board-tr">${board.regDate}</td>
-					<td class="table__board-tr">${board.hit}</td>
+					<td class="table__board-tr"><fmt:formatDate value="${board.regDate}" pattern="MM.dd"/> </td>
+					<td class="table__board-tr"><fmt:formatNumber value="${board.hit}"/></td>
 				</tr>
 			</c:forEach>
 			<tr>

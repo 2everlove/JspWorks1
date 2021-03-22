@@ -40,6 +40,17 @@
  }
 </script>
 <body>
+	<c:if test="${empty sessionId}">
+	<script type="text/javascript">
+		alert("로그인을 해주세요.");
+		location.href="loginForm.do"
+	</script>
+	</c:if>
+	<c:if test="${sessionId ne member.memberId}">
+		alert("다른 회원의 정보를 볼 수 없습니다.");
+		history.go.back();
+	</c:if>
+	<c:if test="${sessionId eq member.memberId}">
 	<div id="container">
 		<div class="title">
 			<h1>상세 보기</h1>
@@ -95,6 +106,7 @@
 			</table>
 		</form>
 	</div>
+	</c:if>
 	<jsp:include page="footer.jsp"/>
 </body>
 </html>
