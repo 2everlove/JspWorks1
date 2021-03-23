@@ -26,7 +26,7 @@
 %>
 <body>
 	<jsp:include page="menu.jsp"/>
-	<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
+	<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO2" scope="application"/>
 	<jsp:useBean id="member" class="com.jweb.member.Member"/>
 	<div id="container">
 		<div class="title">

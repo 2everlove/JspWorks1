@@ -12,7 +12,7 @@
 <jsp:setProperty property="passwd" name="member"/>
 <jsp:setProperty property="name" name="member"/>
 <jsp:setProperty property="gender" name="member"/>
-<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
+<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO2" scope="application"/>
 <%
 	String sessionId = null;
 	if(session.getAttribute("sessionId") != null){

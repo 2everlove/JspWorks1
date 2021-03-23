@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
+<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO2" scope="application"/>
 <%
 	
 	String sessionId = null;

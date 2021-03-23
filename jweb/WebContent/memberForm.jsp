@@ -11,6 +11,35 @@
 <title>Welcome to our-site</title>
 <link rel="stylesheet" href="resources/css/style.css">
 <script type="text/javascript" src="resources/js/check.js"></script>
+<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+	function idCheck(){
+	    var t_id = $("#t_id").val(); //입력상자의 ID값
+	    $.ajax({
+			type: "post",
+			dataType: "text",
+			async: false, //async x
+			url: "http://localhost:8081/jquerystudy/idcheck",
+			data:{id: t_id}, //id를 서블릿에 보냄
+			success:function(data, textStatus){
+			    if(data=="usable"){
+					$(message).text("아이디를 사용할 수 있습니다.").css("color","green");
+					$("#t_id").css("border","1px solid black")
+					$("#id_message").val("true")
+			    } else {
+					$(message).text("아이디를 사용할 수 없습니다.").css("color","red");
+					$("#t_id").css("border","3px solid red")
+					$("#id_message").val("false")
+			    }
+			},
+			error:function(data, textStatus){
+			    alert('Error'+data, textStatus);
+			}
+	    });//ajax닫기
+	}
+</script>
+
 </head>
 <body>
 	<jsp:include page="menu.jsp"></jsp:include>
@@ -25,7 +54,12 @@
 				</tr>
 				<tr>
 					<th>아이디</th>
-					<td><input type="text" name="memberId" placeholder="ID" required autofocus></td>
+					<td>
+					<div id="message"></div>
+					<input type="text" id="t_id" name="memberId" placeholder="ID" required autofocus onkeyup="idCheck()">
+					<input type="text" name="id_message" id="id_message" hidden="">
+					</td>
+					
 				</tr>
 				<tr>
 					<th>비밀번호</th>
@@ -49,7 +83,7 @@
 				<tr>
 					<td colspan="2">
 						<input type="button" value="등록" onclick="checkMember()">
-						<input type="reset" value="취소">
+						<input type="button" value="취소" onClick="window.location.reload()">
 					</td>
 				</tr>
 			</table>

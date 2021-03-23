@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajax Ex 1</title>
+<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+	function fn_process(){
+	    $.ajax({
+			type: "get",
+			dataType: "text",
+			async: false, //async x
+			url: "http://localhost:8081/jquerystudy/ajax1", //servlet mapping address
+			data: {msg: "안녕하세요~ 서버입니다."}, // msg -> servlet
+			success: function(data, textStatus){
+			    $("#message").append(data);
+			},
+			error: function(data, textStatus){
+			    alert("에러 발생");
+			}
+	    });
+	}
+</script>
+</head>
+<body>
+	<p><input type="button" value="전송하기" onclick="fn_process()">
+	<div id="message"></div>
+</body>
+</html>

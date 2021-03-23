@@ -10,7 +10,7 @@
 <jsp:setProperty property="bnum" name="board"/>
 <jsp:useBean id="boardDAO" class="com.jweb.board.BoardDAO" scope="application"/>
 <jsp:useBean id="member" class="com.jweb.member.Member"/>
-<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
+<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO2" scope="application"/>
 <link rel="stylesheet" href="resources/css/style.css">
 <%
 	//자료 수집

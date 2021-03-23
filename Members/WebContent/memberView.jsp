@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <jsp:include page="menu.jsp"/>
-<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
+<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO2" scope="application"/>
 <jsp:useBean id="member" class="com.jweb.member.Member"/>
 <jsp:useBean id="board" class="com.jweb.board.Board"/>
 <jsp:setProperty property="bnum" name="board"/>

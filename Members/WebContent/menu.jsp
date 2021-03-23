@@ -12,7 +12,7 @@
 <title>회원</title>
 <link rel="stylesheet" href="resources/css/style.css">
 </head>
-<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
+<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO2" scope="application"/>
 
 <%
 	String sessionId = null;

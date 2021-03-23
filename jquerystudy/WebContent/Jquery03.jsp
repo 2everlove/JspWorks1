@@ -9,8 +9,8 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script type="text/javascript">
 	function addImage(){
-	    $(".box").html("<img src='img/ff.jpg' width='300' height='250'>")
-	    $(".button1").attr("id", "button2")
+	    $(".box").html("<img src='img/ff.jpg' width='800' height='400'>")
+	    $(".button1").attr("class", "button2")
 	}
 </script>
 </head>

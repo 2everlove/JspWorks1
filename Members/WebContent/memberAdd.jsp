@@ -15,7 +15,7 @@
 <jsp:setProperty property="gender" name="member"/> --%>
 <jsp:setProperty property="*" name="member"/>
 
-<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
+<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO2" scope="application"/>
 <%
 	memDAO.addMember(member);
 	String memberId =request.getParameter("memberId");

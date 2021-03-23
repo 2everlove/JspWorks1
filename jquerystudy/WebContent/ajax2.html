@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajax EX2</title>
+<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+	function fn_process(){
+	    $.ajax({
+			type: "post",
+			dataType: "xml",
+			async: false,
+			url: "http://localhost:8081/jquerystudy/ajax2",
+			success: function(info, textStatus){
+			    $(info).find("book").each(function(){
+					var title = $(this).find("title").text();
+					var writer = $(this).find("writer").text();
+					$("#bookInfo").append(
+						textStatus?"<p>"+title+"</p><p>"+writer+"</p>":"데이터를 불러들이는데 실패했습니다."+"</p>"
+					)
+			    });
+			},
+	    	error: function(info, textStatus){
+	    	    alert('error');
+	    	}
+	    });
+	}
+</script>
+</head>
+<body>
+	<p><input type="button" value="도서정보 요청" onclick="fn_process()">
+	<div id="bookInfo"></div>
+</body>
+</html>

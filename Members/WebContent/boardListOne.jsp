@@ -16,7 +16,7 @@
 <jsp:setProperty property="memberId" name="board"/>
 <jsp:useBean id="boardDAO" class="com.jweb.board.BoardDAO" scope="application"/>
 <jsp:useBean id="member" class="com.jweb.member.Member"/>
-<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
+<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO2" scope="application"/>
 <%
 	//자료 수집
 	int bnum = 0;

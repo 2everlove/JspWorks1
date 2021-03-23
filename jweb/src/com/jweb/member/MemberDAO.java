@@ -202,24 +202,47 @@ public class MemberDAO {
 	}
 	
 	//인증된 memberId의 이름 가져오는 메서드
-		public String getLoginNameById(String memberId) {
-			connDB();
-			String sql="SELECT * FROM t_member WHERE memberId = ?";
-			String name = null;
-			try {
-				pstmt = conn.prepareStatement(sql);
-				pstmt.setString(1, memberId);
-				pstmt.execute();
-				rs = pstmt.executeQuery();
-				if(rs.next())
-				 name = rs.getString("name");
-			} catch (SQLException e) {
-				e.printStackTrace();
-			} finally {
-				disconnectRS();
+	public String getLoginNameById(String memberId) {
+		connDB();
+		String sql="SELECT * FROM t_member WHERE memberId = ?";
+		String name = null;
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, memberId);
+			pstmt.execute();
+			rs = pstmt.executeQuery();
+			if(rs.next())
+			 name = rs.getString("name");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnectRS();
+		}
+		return name;
+	}//
+		
+	//ID 중복 검사 메서드
+	public boolean duplicatedID(String memberId) {
+		connDB();
+		boolean result = false;
+		String sql = "SELECT decode(COUNT(*), 1, 'true', 'false') AS result FROM t_member WHERE memberid = ?";
+		//오라클 decode()함수 이용: id의 개수가 1개이면 true, 아니면 false;
+		//칼럼 이름 : result
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, memberId);
+			//쿼리 실행
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				result = rs.getBoolean("result"); //db에서 result 칼럼을 가져옴
 			}
-			return name;
-		}//
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnectRS();
+		}
+		return result;
+	}
 	
 	
 }//class

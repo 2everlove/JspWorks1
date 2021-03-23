@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="resources/css/style.css">
 <jsp:useBean id="member" class="com.jweb.member.Member"/>
 <jsp:setProperty property="name" name="member"/>
-<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO" scope="application"/>
+<jsp:useBean id="memDAO" class="com.jweb.member.MemberDAO2" scope="application"/>
 <%
 	
 	String sessionId = null;

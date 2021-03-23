@@ -21,6 +21,7 @@ function checkMember() {
 /*	const regExPwd = /[a-z | A-Z ]{6,15}/;*/
 	const chk_num = pwd.search(/[0-9]/g);
 	const chk_eng = pwd.search(/[a-zA-Z]/g);
+	const id_message = form.id_message.value;
 	/*const regExPwdfunc = /[~!@#$%^&*()_+|<>?:{}]/;*/
 	if (id==""){
 	    alert("아이디가 입력되지 않았습니다.");
@@ -32,6 +33,11 @@ function checkMember() {
 	    form.memberId.focus();
 	    return false;
 	} 
+	else if (id_message=="false"){
+		alert("아이디가 중복되어있습니다.")
+		form.memberId.focus();
+	    return false;
+	}
 	else if (pwd==""){
 	    alert("비밀번호가 입력되지 않았습니다.");
 	    form.passwd.focus();
