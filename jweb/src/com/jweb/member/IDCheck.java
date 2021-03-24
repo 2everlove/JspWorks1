@@ -28,7 +28,7 @@ public class IDCheck extends HttpServlet{
 		String id = request.getParameter("id");
 		
 		//dao - 중복 메서드 호출
-		MemberDAO2 memberDAO = new MemberDAO2();
+		MemberDAO memberDAO = new MemberDAO();
 		boolean duplicatedID = memberDAO.duplicatedID(id);
 		System.out.println(duplicatedID);
 		
