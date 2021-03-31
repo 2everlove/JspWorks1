@@ -32,7 +32,7 @@
 		<c:otherwise>
 		<ul>
 			<li><a href="main.jsp">Home</a></li>
-			<li><a href="memberView.do?memberId">회원 수정</a></li>
+			<li><a href="memberView.do?memberId=${sessionId}">회원 수정</a></li>
 			<li><a href="boardList.do">게시판</a></li>
 			<li><a href="logout.do">[<span style="color: blue;">${name}</span>님]로그아웃</a></li>
 		</ul>

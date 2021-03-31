@@ -111,10 +111,13 @@ public class MainController extends HttpServlet{
 			session.invalidate();
 			nextPage = "/main.jsp";
 		} else if(command.equals("/memberView.do")) { //회원 정보 요청
+			String memberId = request.getParameter("memberId");
 			
 			//1명 회원 가져오기
 			HttpSession session = request.getSession();
 			String sessionId = (String) session.getAttribute("sessionId");
+			
+			
 			
 			//dao - getOneDB()
 			Member member = memberDAO.getOndDB(sessionId);
@@ -122,6 +125,7 @@ public class MainController extends HttpServlet{
 			
 			//model and view
 			request.setAttribute("member", member);
+			request.setAttribute("memberId", memberId);
 			request.setAttribute("boardNum", boardNum);	
 			
 			
@@ -163,8 +167,26 @@ public class MainController extends HttpServlet{
 			
 			nextPage = "/memberResult.jsp"; //이걸 안하면 request쪽에 null이 뜸 (doGet, dispatcher.foward())
 		} else if(command.equals("/boardList.do")) {
-			//dao - getListAll() 호출
-			ArrayList<Board> boardList = boardDAO.getBoardList();
+			//폼의 입력값 수정
+			String _field = request.getParameter("field");
+			String _text = request.getParameter("text");
+			String _page = request.getParameter("page");
+			
+			//쿼리 값이 전달되지 않을 경우 기본값 사용
+			String field= "title";
+			if(_field != null && !_field.equals(""))
+				field = _field;
+			
+			String text=""; //검색이 없는 경우
+			if(_text != null && !_text.equals(""))
+				text = _text;
+			
+			int page=1; //기본값
+			if(_page != null && !_page.equals(""))
+				page = Integer.parseInt(_page);
+			
+			//dao 처리
+			ArrayList<Board> boardList = boardDAO.getBoardList(field, text, page);
 			
 			//model and view
 			request.setAttribute("boardList", boardList);

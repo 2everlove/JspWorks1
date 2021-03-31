@@ -46,66 +46,68 @@
 		location.href="loginForm.do"
 	</script>
 	</c:if>
-	<c:if test="${sessionId ne member.memberId}">
-		alert("다른 회원의 정보를 볼 수 없습니다.");
-		history.go.back();
+	<c:if test="${member.memberId ne memberId}"> <!-- member.memberId - sessionId에서 값을 받음, memberId는 직접적으로 값을 받음 -->
+		<script type="text/javascript">
+			alert("다른 회원의 정보를 볼 수 없습니다.");
+			location.href="boardList.do";
+		</script>
 	</c:if>
-	<c:if test="${sessionId eq member.memberId}">
-	<div id="container">
-		<div class="title">
-			<h1>상세 보기</h1>
+	<c:if test="${member.memberId eq memberId}">
+		<div id="container">
+			<div class="title">
+				<h1>상세 보기</h1>
+			</div>
+			<form name="updateForm" action="memberUpdate.do?memberId=${member.memberId}" method="post">
+				<table>
+					<tr>
+						<th colspan="2" id="memberForm__table-FstColumn">${member.memberId} (<span style="color: blue;">${member.name}</span>님)</th>
+					</tr>
+					<tr>
+						<th>아이디</th>
+						<td><input type="text" name="memberId" value="${member.memberId}" disabled></td>
+					</tr>
+					<tr>
+						<th>비밀번호</th>
+						<td><input type="text" name="passwd" value="${member.passwd}"></td>
+					</tr>
+					<tr>
+						<th>비밀번호 확인</th>
+						<td><input type="text" name="passwd_confirm" placeholder="passwd_confirm"></td>
+					</tr>
+					<tr>
+						<th>이름</th>
+						<td><input type="text" name="name" value="${member.name}"></td>
+					</tr>
+					<tr>
+						<th>성별</th>
+						<td>
+							<c:if test="${member.gender eq '남'}">
+								<label><input type="radio" name="gender" value="남" checked>남</label>
+								<label><input type="radio" name="gender" value="여">여</label>
+							</c:if>
+							<c:if test="${member.gender eq '여'}">
+								<label><input type="radio" name="gender" value="남">남</label>
+								<label><input type="radio" name="gender" value="여" checked>여</label>
+							</c:if>
+						</td>
+					</tr>
+					<tr>
+						<th>가입일</th>
+						<td><input type="text" name="joinDate" value="${member.joinDate}" disabled></td>
+					</tr>
+					<tr>
+						<th>작성글 수</th>
+						<td> ${boardNum} <a href="boardListOne.do?memberId=${member.memberId}" style="text-decoration: none;">[자세히 보기]</a></td>
+					</tr>
+					<tr>
+						<td colspan="3">
+						<input type="button" value="수정" onclick="checkForm()">
+						<a href="memberDelete.do?memberId=${member.memberId}" onclick="return confirm('탈퇴하시겠습니까?')"><input type="button" value="탈퇴"></a>
+						</td>
+					</tr>
+				</table>
+			</form>
 		</div>
-		<form name="updateForm" action="memberUpdate.do?memberId=${member.memberId}" method="post">
-			<table>
-				<tr>
-					<th colspan="2" id="memberForm__table-FstColumn">${member.memberId} (<span style="color: blue;">${member.name}</span>님)</th>
-				</tr>
-				<tr>
-					<th>아이디</th>
-					<td><input type="text" name="memberId" value="${member.memberId}" disabled></td>
-				</tr>
-				<tr>
-					<th>비밀번호</th>
-					<td><input type="text" name="passwd" value="${member.passwd}"></td>
-				</tr>
-				<tr>
-					<th>비밀번호 확인</th>
-					<td><input type="text" name="passwd_confirm" placeholder="passwd_confirm"></td>
-				</tr>
-				<tr>
-					<th>이름</th>
-					<td><input type="text" name="name" value="${member.name}"></td>
-				</tr>
-				<tr>
-					<th>성별</th>
-					<td>
-						<c:if test="${member.gender eq '남'}">
-							<label><input type="radio" name="gender" value="남" checked>남</label>
-							<label><input type="radio" name="gender" value="여">여</label>
-						</c:if>
-						<c:if test="${member.gender eq '여'}">
-							<label><input type="radio" name="gender" value="남">남</label>
-							<label><input type="radio" name="gender" value="여" checked>여</label>
-						</c:if>
-					</td>
-				</tr>
-				<tr>
-					<th>가입일</th>
-					<td><input type="text" name="joinDate" value="${member.joinDate}" disabled></td>
-				</tr>
-				<tr>
-					<th>작성글 수</th>
-					<td> ${boardNum} <a href="boardListOne.jsp?memberId=${member.memberId}" style="text-decoration: none;">[자세히 보기]</a></td>
-				</tr>
-				<tr>
-					<td colspan="3">
-					<input type="button" value="수정" onclick="checkForm()">
-					<a href="memberDelete.do?memberId=${member.memberId}" onclick="return confirm('탈퇴하시겠습니까?')"><input type="button" value="탈퇴"></a>
-					</td>
-				</tr>
-			</table>
-		</form>
-	</div>
 	</c:if>
 	<jsp:include page="footer.jsp"/>
 </body>

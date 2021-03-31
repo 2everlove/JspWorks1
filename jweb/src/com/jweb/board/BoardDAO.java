@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class BoardDAO {
 	private static String driverClass = "oracle.jdbc.OracleDriver";		// oracle 주소
@@ -88,7 +89,52 @@ public class BoardDAO {
 		}
 	}//
 	
-	//게시글 전체 목록 출력 메서드
+	//페이징 처리된 목록 출력 메서드
+	public ArrayList<Board> getBoardList(String field, String text, int page){
+		connDB();
+		ArrayList<Board> list = new ArrayList<Board>();
+		String sql = "select * from("
+				+ "SELECT ROWNUM num, board.* "
+				+ "FROM (SELECT * FROM t_board WHERE " + field + " LIKE ? "
+				+ "ORDER BY regdate DESC) board"
+				+ ") "
+				+ "WHERE num BETWEEN ? AND ?";
+		//title(memberId) Like "%a%"
+		//레코드 시작 수 : 1, 11, 21, 31 ->1+(page-1)*10
+		//레코드 끝 수 = 10, 20 30 -> (page)*10
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, "%"+text+"%");
+			pstmt.setInt(2, 1+(page-1)*10);
+			pstmt.setInt(3, page*10);
+			//쿼리 실행
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				int bnum = rs.getInt("bnum");
+				String title = rs.getString("title");
+				String content = rs.getString("content");
+				Date regDate = rs.getDate("regDate");
+				int hit = rs.getInt("hit");
+				String memberId = rs.getString("memberId");
+				
+				Board board = new Board();
+				board.setBnum(bnum);
+				board.setTitle(title);
+				board.setContent(content);
+				board.setRegDate(regDate);
+				board.setHit(hit);
+				board.setMemberId(memberId);
+				list.add(board);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			disconnectRS();
+		}
+		return list;
+	}//
+	
+	/*//게시글 전체 목록 출력 메서드
 	public ArrayList<Board> getListAll(){
 		connDB();
 		ArrayList<Board> boardList = new ArrayList<>();
@@ -113,7 +159,7 @@ public class BoardDAO {
 			disconnectRS();;
 		}
 		return boardList;
-	}//
+	}//*/
 	
 	//게시판 목록 보기
 	public ArrayList<Board> getBoardList() {

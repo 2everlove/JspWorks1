@@ -99,6 +99,21 @@ input[type="text"], input[type="password"]{
 .title__title{background-color: #c8d6e5;}
 #table1 .thead{background-color: #c8d6e5}
 #table1{width: 600px;}
+.search-form{
+	padding-left: 310px;
+	margin-bottom: 10px;
+}
+.page-number li{
+	list-style: none;
+	display: inline;
+}
+.page-number li a{
+	text-decoration: none;
+}
+.page-style{
+	color: blue;
+	font-weight: bold;
+}
 /* #table3 td:nth-child(2n-1){width: 30px} */
 /* #table3 td:nth-child(2n){text-area:left; text-indent:10px;} */
 .dropbtn {
