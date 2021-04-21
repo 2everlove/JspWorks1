@@ -5,6 +5,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -55,15 +56,18 @@
 				</tr>
 			</table>
 			<div class="pager">
+				<c:set var="page" value="${param.page}"/>
+				<c:set var="startNum" value="${page-(page-1)%5}"/>
+				<c:set var="lastNum" value="${fn:substringBefore(Math.ceil(count/10),'.') }" />
 				<ul class="page-number">
-					<c:set var="page" value="${param.page}"/>
-					<c:set var="startNum" value="${page-(page-1)%5}"/>
 					
-					<li><a href="">[<b>&laquo;</b>]</a></li>
-					<c:if test="">
-						<li><span onclick="alert('이전 페이지가 없습니다.')">[이전]</span></li>
+					<!-- <li><a href="">[<b>&laquo;</b>]</a></li> -->
+					<c:if test="${startNum>1}">
+						<li><a href="?page=${startNum-1}&field=${param.field}&text=${param.text}">[이전]</a></li>
 					</c:if>
-						<li><a href="?page=${startNum-1}">[이전]</a></li>
+					<c:if test="${startNum<=1}">
+						<li><span onclick="alert('이전 페이지가 없습니다.');">[이전]</span></li>
+					</c:if>
 					<c:forEach var="i" begin="0" end="4" >
 						<c:if test="${page==startNum+i}">
 							<li><a class="page-style" href="?page=${startNum+i}">[${startNum+i}]</a></li>
@@ -72,11 +76,13 @@
 							<li><a href="?page=${startNum+i}">[${startNum+i}]</a></li>
 						</c:if>
 					</c:forEach>
-						<li><a href="?page=${startNum+5}">[다음]</a></li>
-					<c:if test="">
-						<li><span onclick="alert('다음 페이지가 없습니다.')">[다음]</span></li>
+					<c:if test="${startNum+4<lastNum}">
+						<li><a href="?page=${startNum+5}&field=${param.field}&text=${param.text}">[다음]</a></li>
 					</c:if>
-					<li><a href="">[<b>&raquo;</b>]</a></li>
+					<c:if test="${startNum+4>=lastNum}">
+						<li><span onclick="alert('다음 페이지가 없습니다.');">[다음]</span></li>
+					</c:if>	
+					<!-- <li><a href="">[<b>&raquo;</b>]</a></li> -->
 				</ul>
 				<form class="search-form" action="" method="post">
 					<select name="field">

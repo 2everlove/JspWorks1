@@ -134,6 +134,27 @@ public class BoardDAO {
 		return list;
 	}//
 	
+	public int getBoardCount(String field, String text) {
+		connDB();
+		int count = 0;
+		String sql = "SELECT COUNT(*) count FROM("
+			       + " SELECT ROWNUM num, board.*" 
+			       + " FROM (SELECT * FROM t_board WHERE " + field + " LIKE ? ORDER BY regDate DESC) board"
+			       + " )";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, "%"+text+"%");
+			rs = pstmt.executeQuery();
+			if(rs.next())
+				count = rs.getInt("count");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			disconnectRS();
+		}
+		return count;
+	}
+	
 	/*//게시글 전체 목록 출력 메서드
 	public ArrayList<Board> getListAll(){
 		connDB();

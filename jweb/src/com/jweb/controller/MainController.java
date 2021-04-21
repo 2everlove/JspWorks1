@@ -187,10 +187,12 @@ public class MainController extends HttpServlet{
 			
 			//dao 처리
 			ArrayList<Board> boardList = boardDAO.getBoardList(field, text, page);
+			int count = boardDAO.getBoardCount(field, text);
 			
 			//model and view
 			request.setAttribute("boardList", boardList);
-			nextPage = "/boardList.jsp";
+			request.setAttribute("count", count);
+			nextPage= "/boardList.jsp";
 		} else if(command.equals("/boardWriteForm.do")) {
 			nextPage = "/boardWriteForm.jsp";
 		} else if(command.equals("/boardWriteAdd.do")) {
