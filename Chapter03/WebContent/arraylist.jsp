@@ -17,7 +17,7 @@
 		fruit.add("천혜향");
 		fruit.add("오렌지");
 		
-		for(int i=0;i<fruit.size();i++){
+		for(int i=0; i<fruit.size(); i++){
 			String list = fruit.get(i);
 			out.println(list);
 		}
