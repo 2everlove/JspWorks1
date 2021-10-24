@@ -13,6 +13,7 @@
 	%> --%>
 	<%
 		ArrayList<String> fruit = new ArrayList<String>();
+/* 		ArrayList<String> fruit = new ArrayList<>(); */
 		fruit.add("바나나");
 		fruit.add("천혜향");
 		fruit.add("오렌지");

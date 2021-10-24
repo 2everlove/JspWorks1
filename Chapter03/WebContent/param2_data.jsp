@@ -13,7 +13,7 @@
 		String title = request.getParameter("title");
 	%>
 	<h3><%=URLDecoder.decode(title) %></h3>
-	<p>오늘의 날씨 : <%=request.getParameter("date") %></p>
+	<p>오늘의 날짜 : <%=request.getParameter("date") %></p>
 	
 </body>
 </html>

@@ -26,12 +26,11 @@ public class IDCheck extends HttpServlet{
 		
 		//ajax쪽에서 보내온 id 받기
 		String id = request.getParameter("id");
-		
 		//dao - 중복 메서드 호출
 		MemberDAO memberDAO = new MemberDAO();
 		boolean duplicatedID = memberDAO.duplicatedID(id);
 		System.out.println(duplicatedID);
-		
+		System.out.println("id : "+ id);
 		//결과를 메시지로 전송
 		if(duplicatedID==true) {
 			out.print("not_usable");

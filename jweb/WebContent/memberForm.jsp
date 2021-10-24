@@ -14,13 +14,28 @@
 <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script type="text/javascript">
+    const request = new XMLHttpRequest(); 
+    
 	function idCheck(){
-	    var t_id = $("#t_id").val(); //입력상자의 ID값
+	    let t_id = document.querySelector('#t_id').value;
+	    console.log(t_id);
+	    /* const member = {
+		    "id" : t_id
+	    }; 
+	    console.log(member);*/
+	   	request.open('POST', '/jweb/idcheck', true);
+	    request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded; charset=utf-8');
+	    //request.send(JSON.stringify(member));
+	    request.send("id="+t_id);
+	    //console.log(JSON.stringify(member));
+	    request.onreadystatechange = searchProcess;
+	    
+	    /* var t_id = $("#t_id").val(); //입력상자의 ID값
 	    $.ajax({
 			type: "post",
 			dataType: "text",
 			async: false, //async x
-			url: "http://localhost:8081/jquerystudy/idcheck",
+			url: "/jweb/idcheck",
 			data:{id: t_id}, //id를 서블릿에 보냄
 			success:function(data, textStatus){
 			    if(data=="usable"){
@@ -36,7 +51,27 @@
 			error:function(data, textStatus){
 			    alert('Error'+data, textStatus);
 			}
-	    });//ajax닫기
+	    });//ajax닫기 */
+	    
+	}
+	   
+	   
+	  
+	   	
+	    
+	
+	function searchProcess(){
+	    let messsage = document.querySelector('#message');
+	    message.innerHTML = "";
+	    if(request.readyState == 4 && request.status == 200) {
+			let result = request.responseText;
+		    console.log(result);
+		    if(result == "usable"){
+				message.innerHTML = "<span style='color:green'>아이디를 사용할 수 있습니다</span>"
+		    } else {
+				message.innerHTML = "<span style='color:red'>아이디를 사용할 수 없습니다</span>"
+		    }
+	    }
 	}
 </script>
 
